@@ -80,7 +80,7 @@ pub enum ListAlibabaZonesNoCredentialsV2Error {
 }
 
 
-pub async fn list_alibaba_instance_types(configuration: &configuration::Configuration, access_key_id: Option<&str>, access_key_secret: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<Vec<crate::models::AlibabaInstanceType>, Error<ListAlibabaInstanceTypesError>> {
+pub async fn list_alibaba_instance_types(configuration: &configuration::Configuration, access_key_id: Option<&str>, access_key_secret: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<crate::models::AlibabaInstanceTypeList, Error<ListAlibabaInstanceTypesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -128,7 +128,7 @@ pub async fn list_alibaba_instance_types(configuration: &configuration::Configur
 }
 
 /// Lists available Alibaba Instance Types
-pub async fn list_alibaba_instance_types_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, region: Option<&str>) -> Result<Vec<crate::models::AlibabaInstanceType>, Error<ListAlibabaInstanceTypesNoCredentialsError>> {
+pub async fn list_alibaba_instance_types_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, region: Option<&str>) -> Result<crate::models::AlibabaInstanceTypeList, Error<ListAlibabaInstanceTypesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -167,7 +167,7 @@ pub async fn list_alibaba_instance_types_no_credentials(configuration: &configur
 }
 
 /// Lists available Alibaba Instance Types
-pub async fn list_alibaba_instance_types_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, region: Option<&str>) -> Result<Vec<crate::models::AlibabaInstanceType>, Error<ListAlibabaInstanceTypesNoCredentialsV2Error>> {
+pub async fn list_alibaba_instance_types_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, region: Option<&str>) -> Result<crate::models::AlibabaInstanceTypeList, Error<ListAlibabaInstanceTypesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -205,7 +205,7 @@ pub async fn list_alibaba_instance_types_no_credentials_v2(configuration: &confi
     }
 }
 
-pub async fn list_alibaba_v_switches(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::AlibabaVSwitch>, Error<ListAlibabaVSwitchesError>> {
+pub async fn list_alibaba_v_switches(configuration: &configuration::Configuration, ) -> Result<crate::models::AlibabaVSwitchList, Error<ListAlibabaVSwitchesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -241,7 +241,7 @@ pub async fn list_alibaba_v_switches(configuration: &configuration::Configuratio
 }
 
 /// Lists available Alibaba vSwitches
-pub async fn list_alibaba_v_switches_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, region: Option<&str>) -> Result<Vec<crate::models::AlibabaVSwitch>, Error<ListAlibabaVSwitchesNoCredentialsV2Error>> {
+pub async fn list_alibaba_v_switches_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, region: Option<&str>) -> Result<crate::models::AlibabaVSwitchList, Error<ListAlibabaVSwitchesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -279,7 +279,7 @@ pub async fn list_alibaba_v_switches_no_credentials_v2(configuration: &configura
     }
 }
 
-pub async fn list_alibaba_zones(configuration: &configuration::Configuration, access_key_id: Option<&str>, access_key_secret: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<Vec<crate::models::AlibabaZone>, Error<ListAlibabaZonesError>> {
+pub async fn list_alibaba_zones(configuration: &configuration::Configuration, access_key_id: Option<&str>, access_key_secret: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<crate::models::AlibabaZoneList, Error<ListAlibabaZonesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -327,7 +327,7 @@ pub async fn list_alibaba_zones(configuration: &configuration::Configuration, ac
 }
 
 /// Lists available Alibaba Instance Types
-pub async fn list_alibaba_zones_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, region: Option<&str>) -> Result<Vec<crate::models::AlibabaZone>, Error<ListAlibabaZonesNoCredentialsError>> {
+pub async fn list_alibaba_zones_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, region: Option<&str>) -> Result<crate::models::AlibabaZoneList, Error<ListAlibabaZonesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -366,7 +366,7 @@ pub async fn list_alibaba_zones_no_credentials(configuration: &configuration::Co
 }
 
 /// Lists available Alibaba Instance Types
-pub async fn list_alibaba_zones_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, region: Option<&str>) -> Result<Vec<crate::models::AlibabaZone>, Error<ListAlibabaZonesNoCredentialsV2Error>> {
+pub async fn list_alibaba_zones_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, region: Option<&str>) -> Result<crate::models::AlibabaZoneList, Error<ListAlibabaZonesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

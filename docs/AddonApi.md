@@ -209,7 +209,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_accessible_addons
 
-> Vec<String> list_accessible_addons()
+> crate::models::AccessibleAddons list_accessible_addons()
 
 
 Lists names of addons that can be configured inside the user clusters
@@ -220,7 +220,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::AccessibleAddons**](AccessibleAddons.md)
 
 ### Authorization
 
@@ -299,7 +299,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_installable_addons
 
-> Vec<String> list_installable_addons(project_id, dc, cluster_id)
+> crate::models::AccessibleAddons list_installable_addons(project_id, dc, cluster_id)
 
 
 Lists names of addons that can be installed inside the user cluster
@@ -315,7 +315,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::AccessibleAddons**](AccessibleAddons.md)
 
 ### Authorization
 
@@ -331,7 +331,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_installable_addons_v2
 
-> Vec<String> list_installable_addons_v2(project_id, cluster_id)
+> crate::models::AccessibleAddons list_installable_addons_v2(project_id, cluster_id)
 
 
 Lists names of addons that can be installed inside the user cluster
@@ -346,7 +346,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::AccessibleAddons**](AccessibleAddons.md)
 
 ### Authorization
 

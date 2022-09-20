@@ -20,7 +20,7 @@ pub struct DatacenterSpecNutanix {
     #[serde(rename = "endpoint", skip_serializing_if = "Option::is_none")]
     pub endpoint: Option<String>,
     #[serde(rename = "images", skip_serializing_if = "Option::is_none")]
-    pub images: Option<::std::collections::HashMap<String, String>>,
+    pub images: Option<crate::models::ImageList>,
     /// Optional: Port to use when connecting to the Nutanix Prism Central endpoint (defaults to 9440)
     #[serde(rename = "port", skip_serializing_if = "Option::is_none")]
     pub port: Option<i32>,

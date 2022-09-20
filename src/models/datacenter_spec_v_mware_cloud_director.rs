@@ -23,7 +23,7 @@ pub struct DatacenterSpecVMwareCloudDirector {
     #[serde(rename = "storageProfile", skip_serializing_if = "Option::is_none")]
     pub storage_profile: Option<String>,
     #[serde(rename = "templates", skip_serializing_if = "Option::is_none")]
-    pub templates: Option<::std::collections::HashMap<String, String>>,
+    pub templates: Option<crate::models::ImageList>,
     /// Endpoint URL to use, including protocol, for example \"https://vclouddirector.example.com\".
     #[serde(rename = "url", skip_serializing_if = "Option::is_none")]
     pub url: Option<String>,

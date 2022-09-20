@@ -14,9 +14,9 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ResourceRequirements {
     #[serde(rename = "limits", skip_serializing_if = "Option::is_none")]
-    pub limits: Option<::std::collections::HashMap<String, serde_json::Value>>,
+    pub limits: Option<crate::models::ResourceList>,
     #[serde(rename = "requests", skip_serializing_if = "Option::is_none")]
-    pub requests: Option<::std::collections::HashMap<String, serde_json::Value>>,
+    pub requests: Option<crate::models::ResourceList>,
 }
 
 impl ResourceRequirements {

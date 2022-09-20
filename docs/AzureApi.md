@@ -219,7 +219,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_azure_sizes
 
-> Vec<crate::models::AzureSize> list_azure_sizes(subscription_id, tenant_id, client_id, client_secret, location, credential)
+> crate::models::AzureSizeList list_azure_sizes(subscription_id, tenant_id, client_id, client_secret, location, credential)
 
 
 Lists available VM sizes in an Azure region
@@ -238,7 +238,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AzureSize>**](AzureSize.md)
+[**crate::models::AzureSizeList**](AzureSizeList.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_azure_sizes_no_credentials
 
-> Vec<crate::models::AzureSize> list_azure_sizes_no_credentials(project_id, dc, cluster_id)
+> crate::models::AzureSizeList list_azure_sizes_no_credentials(project_id, dc, cluster_id)
 
 
 Lists available VM sizes in an Azure region
@@ -270,7 +270,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AzureSize>**](AzureSize.md)
+[**crate::models::AzureSizeList**](AzureSizeList.md)
 
 ### Authorization
 
@@ -286,7 +286,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_azure_sizes_no_credentials_v2
 
-> Vec<crate::models::AzureSize> list_azure_sizes_no_credentials_v2(project_id, cluster_id)
+> crate::models::AzureSizeList list_azure_sizes_no_credentials_v2(project_id, cluster_id)
 
 
 Lists available VM sizes in an Azure region
@@ -301,7 +301,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AzureSize>**](AzureSize.md)
+[**crate::models::AzureSizeList**](AzureSizeList.md)
 
 ### Authorization
 

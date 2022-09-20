@@ -69,7 +69,7 @@ pub async fn get_seed_settings(configuration: &configuration::Configuration, see
     }
 }
 
-pub async fn list_seed_names(configuration: &configuration::Configuration, ) -> Result<Vec<String>, Error<ListSeedNamesError>> {
+pub async fn list_seed_names(configuration: &configuration::Configuration, ) -> Result<crate::models::SeedNamesList, Error<ListSeedNamesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

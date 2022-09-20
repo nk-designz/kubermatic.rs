@@ -16,7 +16,7 @@ pub struct SettingSpec {
     #[serde(rename = "cleanupOptions", skip_serializing_if = "Option::is_none")]
     pub cleanup_options: Option<Box<crate::models::CleanupOptions>>,
     #[serde(rename = "customLinks", skip_serializing_if = "Option::is_none")]
-    pub custom_links: Option<Vec<crate::models::CustomLink>>,
+    pub custom_links: Option<crate::models::CustomLinks>,
     #[serde(rename = "defaultNodeCount", skip_serializing_if = "Option::is_none")]
     pub default_node_count: Option<i32>,
     #[serde(rename = "displayAPIDocs", skip_serializing_if = "Option::is_none")]

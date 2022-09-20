@@ -287,7 +287,7 @@ pub enum UpdateSeedError {
 
 
 /// Creates report configuration for KKP metering tool. Only available in Kubermatic Enterprise Edition
-pub async fn create_metering_report_configuration(configuration: &configuration::Configuration, name: &str, body: Option<crate::models::InlineObject1>) -> Result<(), Error<CreateMeteringReportConfigurationError>> {
+pub async fn create_metering_report_configuration(configuration: &configuration::Configuration, name: &str, body: Option<crate::models::ReportsNameBody1>) -> Result<(), Error<CreateMeteringReportConfigurationError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -395,7 +395,7 @@ pub async fn create_or_update_metering_credentials(configuration: &configuration
     }
 }
 
-pub async fn create_resource_quota(configuration: &configuration::Configuration, body: crate::models::InlineObject13) -> Result<(), Error<CreateResourceQuotaError>> {
+pub async fn create_resource_quota(configuration: &configuration::Configuration, body: crate::models::V2QuotasBody) -> Result<(), Error<CreateResourceQuotaError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -431,7 +431,7 @@ pub async fn create_resource_quota(configuration: &configuration::Configuration,
     }
 }
 
-pub async fn create_seed(configuration: &configuration::Configuration, body: Option<crate::models::InlineObject2>) -> Result<crate::models::Seed, Error<CreateSeedError>> {
+pub async fn create_seed(configuration: &configuration::Configuration, body: Option<crate::models::AdminSeedsBody>) -> Result<crate::models::Seed, Error<CreateSeedError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -713,7 +713,7 @@ pub async fn get_admission_plugin(configuration: &configuration::Configuration, 
     }
 }
 
-pub async fn get_kubermatic_custom_links(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::CustomLink>, Error<GetKubermaticCustomLinksError>> {
+pub async fn get_kubermatic_custom_links(configuration: &configuration::Configuration, ) -> Result<crate::models::GlobalCustomLinks, Error<GetKubermaticCustomLinksError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1181,7 +1181,7 @@ pub async fn update_admission_plugin(configuration: &configuration::Configuratio
 }
 
 /// Updates existing report configuration for KKP metering tool. Only available in Kubermatic Enterprise Edition
-pub async fn update_metering_report_configuration(configuration: &configuration::Configuration, name: &str, body: Option<crate::models::InlineObject>) -> Result<(), Error<UpdateMeteringReportConfigurationError>> {
+pub async fn update_metering_report_configuration(configuration: &configuration::Configuration, name: &str, body: Option<crate::models::ReportsNameBody>) -> Result<(), Error<UpdateMeteringReportConfigurationError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1217,7 +1217,7 @@ pub async fn update_metering_report_configuration(configuration: &configuration:
     }
 }
 
-pub async fn update_seed(configuration: &configuration::Configuration, seed_name: &str, body: Option<crate::models::InlineObject3>) -> Result<crate::models::Seed, Error<UpdateSeedError>> {
+pub async fn update_seed(configuration: &configuration::Configuration, seed_name: &str, body: Option<crate::models::SeedsSeedNameBody>) -> Result<crate::models::Seed, Error<UpdateSeedError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

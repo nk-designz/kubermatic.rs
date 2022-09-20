@@ -28,7 +28,7 @@ Create the datacenter for a specified seed.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **seed_name** | **String** |  | [required] |
-**body** | Option<[**InlineObject5**](InlineObject5.md)> |  |  |
+**body** | Option<[**SeedNameDcBody**](SeedNameDcBody.md)> |  |  |
 
 ### Return type
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_datacenters
 
-> Vec<crate::models::Datacenter> list_datacenters()
+> crate::models::DatacenterList list_datacenters()
 
 
 ### Parameters
@@ -172,7 +172,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::Datacenter>**](Datacenter.md)
+[**crate::models::DatacenterList**](DatacenterList.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **seed_name** | **String** |  | [required] |
 **dc** | **String** |  | [required] |
-**body** | Option<[**InlineObject6**](InlineObject6.md)> |  |  |
+**body** | Option<[**DcDcBody**](DcDcBody.md)> |  |  |
 
 ### Return type
 

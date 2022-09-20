@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 ## list_v_mware_cloud_director_catalogs
 
-> Vec<crate::models::VMwareCloudDirectorCatalog> list_v_mware_cloud_director_catalogs(dc, username, password, organization, VDC, credential)
+> crate::models::VMwareCloudDirectorCatalogList list_v_mware_cloud_director_catalogs(dc, username, password, organization, VDC, credential)
 
 
 List VMware Cloud Director Catalogs
@@ -36,7 +36,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorCatalog>**](VMwareCloudDirectorCatalog.md)
+[**crate::models::VMwareCloudDirectorCatalogList**](VMwareCloudDirectorCatalogList.md)
 
 ### Authorization
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_catalogs_no_credentials
 
-> Vec<crate::models::VMwareCloudDirectorCatalog> list_v_mware_cloud_director_catalogs_no_credentials(project_id, cluster_id)
+> crate::models::VMwareCloudDirectorCatalogList list_v_mware_cloud_director_catalogs_no_credentials(project_id, cluster_id)
 
 
 List VMware Cloud Director Catalogs
@@ -67,7 +67,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorCatalog>**](VMwareCloudDirectorCatalog.md)
+[**crate::models::VMwareCloudDirectorCatalogList**](VMwareCloudDirectorCatalogList.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_networks
 
-> Vec<crate::models::VMwareCloudDirectorNetwork> list_v_mware_cloud_director_networks(dc, username, password, organization, VDC, credential)
+> crate::models::VMwareCloudDirectorNetworkList list_v_mware_cloud_director_networks(dc, username, password, organization, VDC, credential)
 
 
 List VMware Cloud Director OVDC Networks
@@ -102,7 +102,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorNetwork>**](VMwareCloudDirectorNetwork.md)
+[**crate::models::VMwareCloudDirectorNetworkList**](VMwareCloudDirectorNetworkList.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_networks_no_credentials
 
-> Vec<crate::models::VMwareCloudDirectorNetwork> list_v_mware_cloud_director_networks_no_credentials(project_id, cluster_id)
+> crate::models::VMwareCloudDirectorNetworkList list_v_mware_cloud_director_networks_no_credentials(project_id, cluster_id)
 
 
 List VMware Cloud Director OVDC Networks
@@ -133,7 +133,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorNetwork>**](VMwareCloudDirectorNetwork.md)
+[**crate::models::VMwareCloudDirectorNetworkList**](VMwareCloudDirectorNetworkList.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_storage_profiles
 
-> Vec<crate::models::VMwareCloudDirectorStorageProfile> list_v_mware_cloud_director_storage_profiles(dc, username, password, organization, VDC, credential)
+> crate::models::VMwareCloudDirectorStorageProfileList list_v_mware_cloud_director_storage_profiles(dc, username, password, organization, VDC, credential)
 
 
 List VMware Cloud Director Storage Profiles
@@ -168,7 +168,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorStorageProfile>**](VMwareCloudDirectorStorageProfile.md)
+[**crate::models::VMwareCloudDirectorStorageProfileList**](VMwareCloudDirectorStorageProfileList.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_storage_profiles_no_credentials
 
-> Vec<crate::models::VMwareCloudDirectorStorageProfile> list_v_mware_cloud_director_storage_profiles_no_credentials(project_id, cluster_id)
+> crate::models::VMwareCloudDirectorStorageProfileList list_v_mware_cloud_director_storage_profiles_no_credentials(project_id, cluster_id)
 
 
 List VMware Cloud Director Storage Profiles
@@ -199,7 +199,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorStorageProfile>**](VMwareCloudDirectorStorageProfile.md)
+[**crate::models::VMwareCloudDirectorStorageProfileList**](VMwareCloudDirectorStorageProfileList.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_templates
 
-> Vec<crate::models::VMwareCloudDirectorTemplate> list_v_mware_cloud_director_templates(dc, catalog_name, username, password, organization, VDC, credential)
+> crate::models::VMwareCloudDirectorTemplateList list_v_mware_cloud_director_templates(dc, catalog_name, username, password, organization, VDC, credential)
 
 
 List VMware Cloud Director Templates
@@ -235,7 +235,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorTemplate>**](VMwareCloudDirectorTemplate.md)
+[**crate::models::VMwareCloudDirectorTemplateList**](VMwareCloudDirectorTemplateList.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_v_mware_cloud_director_templates_no_credentials
 
-> Vec<crate::models::VMwareCloudDirectorTemplate> list_v_mware_cloud_director_templates_no_credentials(project_id, cluster_id, catalog_name)
+> crate::models::VMwareCloudDirectorTemplateList list_v_mware_cloud_director_templates_no_credentials(project_id, cluster_id, catalog_name)
 
 
 List VMware Cloud Director Templates
@@ -267,7 +267,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VMwareCloudDirectorTemplate>**](VMwareCloudDirectorTemplate.md)
+[**crate::models::VMwareCloudDirectorTemplateList**](VMwareCloudDirectorTemplateList.md)
 
 ### Authorization
 

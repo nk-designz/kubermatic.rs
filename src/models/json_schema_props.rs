@@ -28,9 +28,9 @@ pub struct JsonSchemaProps {
     #[serde(rename = "default", skip_serializing_if = "Option::is_none")]
     pub default: Option<Box<crate::models::Json>>,
     #[serde(rename = "definitions", skip_serializing_if = "Option::is_none")]
-    pub definitions: Option<::std::collections::HashMap<String, crate::models::JsonSchemaProps>>,
+    pub definitions: Option<crate::models::JsonSchemaDefinitions>,
     #[serde(rename = "dependencies", skip_serializing_if = "Option::is_none")]
-    pub dependencies: Option<::std::collections::HashMap<String, crate::models::JsonSchemaPropsOrStringArray>>,
+    pub dependencies: Option<crate::models::JsonSchemaDependencies>,
     #[serde(rename = "description", skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     #[serde(rename = "enum", skip_serializing_if = "Option::is_none")]
@@ -107,7 +107,7 @@ pub struct JsonSchemaProps {
     #[serde(rename = "x-kubernetes-preserve-unknown-fields", skip_serializing_if = "Option::is_none")]
     pub x_kubernetes_preserve_unknown_fields: Option<bool>,
     #[serde(rename = "x-kubernetes-validations", skip_serializing_if = "Option::is_none")]
-    pub x_kubernetes_validations: Option<Vec<crate::models::ValidationRule>>,
+    pub x_kubernetes_validations: Option<crate::models::ValidationRules>,
 }
 
 impl JsonSchemaProps {

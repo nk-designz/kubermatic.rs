@@ -426,7 +426,7 @@ Creates a cluster templates for the given project.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **project_id** | **String** |  | [required] |
-**body** | Option<[**InlineObject8**](InlineObject8.md)> |  |  |
+**body** | Option<[**ProjectIdClustertemplatesBody**](ProjectIdClustertemplatesBody.md)> |  |  |
 
 ### Return type
 
@@ -456,7 +456,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **project_id** | **String** |  | [required] |
 **template_id** | **String** |  | [required] |
-**body** | Option<[**InlineObject10**](InlineObject10.md)> |  |  |
+**body** | Option<[**TemplateIdInstancesBody**](TemplateIdInstancesBody.md)> |  |  |
 
 ### Return type
 
@@ -731,7 +731,7 @@ Note that this endpoint can be consumed by every authenticated user.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | Option<[**InlineObject4**](InlineObject4.md)> |  |  |
+**body** | Option<[**V1ProjectsBody**](V1ProjectsBody.md)> |  |  |
 
 ### Return type
 
@@ -1431,7 +1431,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_backup_destination_names
 
-> Vec<String> get_backup_destination_names(project_id, cluster_id)
+> crate::models::BackupDestinationNames get_backup_destination_names(project_id, cluster_id)
 
 
 Gets possible backup destination names for a cluster
@@ -1446,7 +1446,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::BackupDestinationNames**](BackupDestinationNames.md)
 
 ### Authorization
 
@@ -2442,7 +2442,7 @@ Import a cluster templates for the given project.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **project_id** | **String** |  | [required] |
-**body** | Option<[**InlineObject9**](InlineObject9.md)> |  |  |
+**body** | Option<[**ClustertemplatesImportBody**](ClustertemplatesImportBody.md)> |  |  |
 
 ### Return type
 
@@ -2462,7 +2462,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aks_clusters
 
-> Vec<crate::models::AksCluster> list_aks_clusters(project_id, tenant_id, subscription_id, client_id, client_secret, credential)
+> crate::models::AksClusterList list_aks_clusters(project_id, tenant_id, subscription_id, client_id, client_secret, credential)
 
 
 Lists AKS clusters
@@ -2481,7 +2481,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AksCluster>**](AKSCluster.md)
+[**crate::models::AksClusterList**](AKSClusterList.md)
 
 ### Authorization
 
@@ -2686,7 +2686,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_cluster_templates
 
-> Vec<crate::models::ClusterTemplate> list_cluster_templates(project_id)
+> crate::models::ClusterTemplateList list_cluster_templates(project_id)
 List cluster templates for the given project.
 
 ### Parameters
@@ -2698,7 +2698,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::ClusterTemplate>**](ClusterTemplate.md)
+[**crate::models::ClusterTemplateList**](ClusterTemplateList.md)
 
 ### Authorization
 
@@ -2714,7 +2714,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_clusters
 
-> Vec<crate::models::Cluster> list_clusters(project_id, dc)
+> crate::models::ClusterList list_clusters(project_id, dc)
 Lists clusters for the specified project and data center.
 
 ### Parameters
@@ -2727,7 +2727,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Cluster>**](Cluster.md)
+[**crate::models::ClusterList**](ClusterList.md)
 
 ### Authorization
 
@@ -2743,7 +2743,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_clusters_for_project
 
-> Vec<crate::models::Cluster> list_clusters_for_project(project_id)
+> crate::models::ClusterList list_clusters_for_project(project_id)
 Lists clusters for the specified project.
 
 ### Parameters
@@ -2755,7 +2755,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Cluster>**](Cluster.md)
+[**crate::models::ClusterList**](ClusterList.md)
 
 ### Authorization
 
@@ -2771,7 +2771,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_clusters_v2
 
-> Vec<crate::models::Cluster> list_clusters_v2(project_id, show_dm_count)
+> crate::models::ClusterList list_clusters_v2(project_id, show_dm_count)
 Lists clusters for the specified project. If query parameter `show_dm_count` is set to `true` then the endpoint will also return the number of machine deployments of each cluster.
 
 ### Parameters
@@ -2784,7 +2784,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Cluster>**](Cluster.md)
+[**crate::models::ClusterList**](ClusterList.md)
 
 ### Authorization
 
@@ -2858,7 +2858,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_eks_clusters
 
-> Vec<crate::models::EksCluster> list_eks_clusters(project_id, access_key_id, secret_access_key, credential, region)
+> crate::models::EksClusterList list_eks_clusters(project_id, access_key_id, secret_access_key, credential, region)
 
 
 Lists EKS clusters
@@ -2876,7 +2876,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::EksCluster>**](EKSCluster.md)
+[**crate::models::EksClusterList**](EKSClusterList.md)
 
 ### Authorization
 
@@ -3128,7 +3128,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gke_clusters
 
-> Vec<crate::models::GkeCluster> list_gke_clusters(project_id, service_account, credential)
+> crate::models::GkeClusterList list_gke_clusters(project_id, service_account, credential)
 Lists GKE clusters.
 
 ### Parameters
@@ -3142,7 +3142,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GkeCluster>**](GKECluster.md)
+[**crate::models::GkeClusterList**](GKEClusterList.md)
 
 ### Authorization
 
@@ -4011,7 +4011,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **project_id** | **String** |  | [required] |
 **binding_name** | **String** |  | [required] |
-**body** | [**InlineObject11**](InlineObject11.md) |  | [required] |
+**body** | [**GroupbindingsBindingNameBody**](GroupbindingsBindingNameBody.md) |  | [required] |
 
 ### Return type
 
@@ -4496,7 +4496,7 @@ Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **project_id** | **String** |  | [required] |
 **cluster_id** | **String** |  | [required] |
-**body** | Option<[**InlineObject12**](InlineObject12.md)> |  |  |
+**body** | Option<[**ClustersClusterIdBody**](ClustersClusterIdBody.md)> |  |  |
 
 ### Return type
 

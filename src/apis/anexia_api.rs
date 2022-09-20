@@ -49,7 +49,7 @@ pub enum ListAnexiaVlansNoCredentialsV2Error {
 
 
 /// Lists templates from anexia
-pub async fn list_anexia_templates(configuration: &configuration::Configuration, token: Option<&str>, credential: Option<&str>, location: Option<&str>) -> Result<Vec<crate::models::AnexiaTemplate>, Error<ListAnexiaTemplatesError>> {
+pub async fn list_anexia_templates(configuration: &configuration::Configuration, token: Option<&str>, credential: Option<&str>, location: Option<&str>) -> Result<crate::models::AnexiaTemplateList, Error<ListAnexiaTemplatesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -94,7 +94,7 @@ pub async fn list_anexia_templates(configuration: &configuration::Configuration,
 }
 
 /// Lists templates from Anexia
-pub async fn list_anexia_templates_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::AnexiaTemplate>, Error<ListAnexiaTemplatesNoCredentialsV2Error>> {
+pub async fn list_anexia_templates_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::AnexiaTemplateList, Error<ListAnexiaTemplatesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -130,7 +130,7 @@ pub async fn list_anexia_templates_no_credentials_v2(configuration: &configurati
 }
 
 /// Lists vlans from anexia
-pub async fn list_anexia_vlans(configuration: &configuration::Configuration, token: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::AnexiaVlan>, Error<ListAnexiaVlansError>> {
+pub async fn list_anexia_vlans(configuration: &configuration::Configuration, token: Option<&str>, credential: Option<&str>) -> Result<crate::models::AnexiaVlanList, Error<ListAnexiaVlansError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -172,7 +172,7 @@ pub async fn list_anexia_vlans(configuration: &configuration::Configuration, tok
 }
 
 /// Lists vlans from Anexia
-pub async fn list_anexia_vlans_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::AnexiaVlan>, Error<ListAnexiaVlansNoCredentialsV2Error>> {
+pub async fn list_anexia_vlans_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::AnexiaVlanList, Error<ListAnexiaVlansNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

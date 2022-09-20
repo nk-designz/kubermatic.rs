@@ -104,7 +104,7 @@ pub enum ValidateGkeCredentialsError {
 }
 
 
-pub async fn list_gke_cluster_disk_types(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::GcpDiskType>, Error<ListGkeClusterDiskTypesError>> {
+pub async fn list_gke_cluster_disk_types(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::GcpDiskTypeList, Error<ListGkeClusterDiskTypesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -139,7 +139,7 @@ pub async fn list_gke_cluster_disk_types(configuration: &configuration::Configur
     }
 }
 
-pub async fn list_gke_cluster_images(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::GkeImage>, Error<ListGkeClusterImagesError>> {
+pub async fn list_gke_cluster_images(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::GkeImageList, Error<ListGkeClusterImagesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -174,7 +174,7 @@ pub async fn list_gke_cluster_images(configuration: &configuration::Configuratio
     }
 }
 
-pub async fn list_gke_cluster_sizes(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::GcpMachineSize>, Error<ListGkeClusterSizesError>> {
+pub async fn list_gke_cluster_sizes(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::GcpMachineSizeList, Error<ListGkeClusterSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -209,7 +209,7 @@ pub async fn list_gke_cluster_sizes(configuration: &configuration::Configuration
     }
 }
 
-pub async fn list_gke_cluster_zones(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::GkeZone>, Error<ListGkeClusterZonesError>> {
+pub async fn list_gke_cluster_zones(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::GkeZoneList, Error<ListGkeClusterZonesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -244,7 +244,7 @@ pub async fn list_gke_cluster_zones(configuration: &configuration::Configuration
     }
 }
 
-pub async fn list_gke_disk_types(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::GkeDiskType>, Error<ListGkeDiskTypesError>> {
+pub async fn list_gke_disk_types(configuration: &configuration::Configuration, ) -> Result<crate::models::GkeDiskTypeList, Error<ListGkeDiskTypesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -280,7 +280,7 @@ pub async fn list_gke_disk_types(configuration: &configuration::Configuration, )
 }
 
 /// Lists GKE image types
-pub async fn list_gke_images(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<Vec<crate::models::GkeImage>, Error<ListGkeImagesError>> {
+pub async fn list_gke_images(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<crate::models::GkeImageList, Error<ListGkeImagesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -376,7 +376,7 @@ pub async fn list_gke_versions(configuration: &configuration::Configuration, ser
 }
 
 /// Lists GKE zones
-pub async fn list_gke_zones(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::GkeZone>, Error<ListGkeZonesError>> {
+pub async fn list_gke_zones(configuration: &configuration::Configuration, ) -> Result<crate::models::GkeZoneList, Error<ListGkeZonesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -412,7 +412,7 @@ pub async fn list_gke_zones(configuration: &configuration::Configuration, ) -> R
 }
 
 /// Lists GKE vmsizes
-pub async fn list_gkevm_sizes(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<Vec<crate::models::GcpMachineSize>, Error<ListGkevmSizesError>> {
+pub async fn list_gkevm_sizes(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<crate::models::GcpMachineSizeList, Error<ListGkevmSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

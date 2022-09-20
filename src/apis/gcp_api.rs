@@ -137,7 +137,7 @@ pub enum ListGcpZonesNoCredentialsV2Error {
 
 
 /// Lists disk types from GCP
-pub async fn list_gcp_disk_types(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<Vec<crate::models::GcpDiskType>, Error<ListGcpDiskTypesError>> {
+pub async fn list_gcp_disk_types(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<crate::models::GcpDiskTypeList, Error<ListGcpDiskTypesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -182,7 +182,7 @@ pub async fn list_gcp_disk_types(configuration: &configuration::Configuration, s
 }
 
 /// Lists disk types from GCP
-pub async fn list_gcp_disk_types_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, zone: Option<&str>) -> Result<Vec<crate::models::GcpDiskType>, Error<ListGcpDiskTypesNoCredentialsError>> {
+pub async fn list_gcp_disk_types_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, zone: Option<&str>) -> Result<crate::models::GcpDiskTypeList, Error<ListGcpDiskTypesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -221,7 +221,7 @@ pub async fn list_gcp_disk_types_no_credentials(configuration: &configuration::C
 }
 
 /// Lists disk types from GCP
-pub async fn list_gcp_disk_types_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, zone: Option<&str>) -> Result<Vec<crate::models::GcpDiskType>, Error<ListGcpDiskTypesNoCredentialsV2Error>> {
+pub async fn list_gcp_disk_types_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, zone: Option<&str>) -> Result<crate::models::GcpDiskTypeList, Error<ListGcpDiskTypesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -260,7 +260,7 @@ pub async fn list_gcp_disk_types_no_credentials_v2(configuration: &configuration
 }
 
 /// Lists networks from GCP
-pub async fn list_gcp_networks(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::GcpNetwork>, Error<ListGcpNetworksError>> {
+pub async fn list_gcp_networks(configuration: &configuration::Configuration, ) -> Result<crate::models::GcpNetworkList, Error<ListGcpNetworksError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -296,7 +296,7 @@ pub async fn list_gcp_networks(configuration: &configuration::Configuration, ) -
 }
 
 /// Lists available GCP networks
-pub async fn list_gcp_networks_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::GcpNetwork>, Error<ListGcpNetworksNoCredentialsError>> {
+pub async fn list_gcp_networks_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<crate::models::GcpNetworkList, Error<ListGcpNetworksNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -332,7 +332,7 @@ pub async fn list_gcp_networks_no_credentials(configuration: &configuration::Con
 }
 
 /// Lists available GCP networks
-pub async fn list_gcp_networks_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::GcpNetwork>, Error<ListGcpNetworksNoCredentialsV2Error>> {
+pub async fn list_gcp_networks_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::GcpNetworkList, Error<ListGcpNetworksNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -368,7 +368,7 @@ pub async fn list_gcp_networks_no_credentials_v2(configuration: &configuration::
 }
 
 /// Lists machine sizes from GCP
-pub async fn list_gcp_sizes(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<Vec<crate::models::GcpMachineSize>, Error<ListGcpSizesError>> {
+pub async fn list_gcp_sizes(configuration: &configuration::Configuration, service_account: Option<&str>, credential: Option<&str>, zone: Option<&str>) -> Result<crate::models::GcpMachineSizeList, Error<ListGcpSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -413,7 +413,7 @@ pub async fn list_gcp_sizes(configuration: &configuration::Configuration, servic
 }
 
 /// Lists machine sizes from GCP
-pub async fn list_gcp_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, zone: Option<&str>) -> Result<Vec<crate::models::GcpMachineSize>, Error<ListGcpSizesNoCredentialsError>> {
+pub async fn list_gcp_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, zone: Option<&str>) -> Result<crate::models::GcpMachineSizeList, Error<ListGcpSizesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -452,7 +452,7 @@ pub async fn list_gcp_sizes_no_credentials(configuration: &configuration::Config
 }
 
 /// Lists machine sizes from GCP
-pub async fn list_gcp_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, zone: Option<&str>) -> Result<Vec<crate::models::GcpMachineSize>, Error<ListGcpSizesNoCredentialsV2Error>> {
+pub async fn list_gcp_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, zone: Option<&str>) -> Result<crate::models::GcpMachineSizeList, Error<ListGcpSizesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -491,7 +491,7 @@ pub async fn list_gcp_sizes_no_credentials_v2(configuration: &configuration::Con
 }
 
 /// Lists subnetworks from GCP
-pub async fn list_gcp_subnetworks(configuration: &configuration::Configuration, dc: &str, service_account: Option<&str>, credential: Option<&str>, network: Option<&str>) -> Result<Vec<crate::models::GcpSubnetwork>, Error<ListGcpSubnetworksError>> {
+pub async fn list_gcp_subnetworks(configuration: &configuration::Configuration, dc: &str, service_account: Option<&str>, credential: Option<&str>, network: Option<&str>) -> Result<crate::models::GcpSubnetworkList, Error<ListGcpSubnetworksError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -536,7 +536,7 @@ pub async fn list_gcp_subnetworks(configuration: &configuration::Configuration, 
 }
 
 /// Lists available GCP subnetworks
-pub async fn list_gcp_subnetworks_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, network: Option<&str>) -> Result<Vec<crate::models::GcpSubnetwork>, Error<ListGcpSubnetworksNoCredentialsError>> {
+pub async fn list_gcp_subnetworks_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str, network: Option<&str>) -> Result<crate::models::GcpSubnetworkList, Error<ListGcpSubnetworksNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -575,7 +575,7 @@ pub async fn list_gcp_subnetworks_no_credentials(configuration: &configuration::
 }
 
 /// Lists available GCP subnetworks
-pub async fn list_gcp_subnetworks_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, network: Option<&str>) -> Result<Vec<crate::models::GcpSubnetwork>, Error<ListGcpSubnetworksNoCredentialsV2Error>> {
+pub async fn list_gcp_subnetworks_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, network: Option<&str>) -> Result<crate::models::GcpSubnetworkList, Error<ListGcpSubnetworksNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -614,7 +614,7 @@ pub async fn list_gcp_subnetworks_no_credentials_v2(configuration: &configuratio
 }
 
 /// Lists available GCP zones
-pub async fn list_gcp_zones(configuration: &configuration::Configuration, dc: &str, service_account: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::GcpZone>, Error<ListGcpZonesError>> {
+pub async fn list_gcp_zones(configuration: &configuration::Configuration, dc: &str, service_account: Option<&str>, credential: Option<&str>) -> Result<crate::models::GcpZoneList, Error<ListGcpZonesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -656,7 +656,7 @@ pub async fn list_gcp_zones(configuration: &configuration::Configuration, dc: &s
 }
 
 /// Lists available GCP zones
-pub async fn list_gcp_zones_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::GcpZone>, Error<ListGcpZonesNoCredentialsError>> {
+pub async fn list_gcp_zones_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<crate::models::GcpZoneList, Error<ListGcpZonesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -692,7 +692,7 @@ pub async fn list_gcp_zones_no_credentials(configuration: &configuration::Config
 }
 
 /// Lists available GCP zones
-pub async fn list_gcp_zones_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::GcpZone>, Error<ListGcpZonesNoCredentialsV2Error>> {
+pub async fn list_gcp_zones_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::GcpZoneList, Error<ListGcpZonesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

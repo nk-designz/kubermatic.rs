@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## list_kube_virt_vmi_presets
 
-> Vec<crate::models::VirtualMachineInstancePreset> list_kube_virt_vmi_presets(kubeconfig, credential)
+> crate::models::VirtualMachineInstancePresetList list_kube_virt_vmi_presets(kubeconfig, credential)
 Lists available KubeVirt VirtualMachineInstancePreset.
 
 ### Parameters
@@ -26,7 +26,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VirtualMachineInstancePreset>**](VirtualMachineInstancePreset.md)
+[**crate::models::VirtualMachineInstancePresetList**](VirtualMachineInstancePresetList.md)
 
 ### Authorization
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_kube_virt_vmi_presets_no_credentials
 
-> Vec<crate::models::VirtualMachineInstancePreset> list_kube_virt_vmi_presets_no_credentials(project_id, cluster_id)
+> crate::models::VirtualMachineInstancePresetList list_kube_virt_vmi_presets_no_credentials(project_id, cluster_id)
 
 
 Lists available VirtualMachineInstancePreset
@@ -57,7 +57,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::VirtualMachineInstancePreset>**](VirtualMachineInstancePreset.md)
+[**crate::models::VirtualMachineInstancePresetList**](VirtualMachineInstancePresetList.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_kubevirt_storage_classes
 
-> Vec<crate::models::StorageClass> list_kubevirt_storage_classes(kubeconfig, credential)
+> crate::models::StorageClassList list_kubevirt_storage_classes(kubeconfig, credential)
 Lists available K8s StorageClasses in the Kubevirt cluster.
 
 ### Parameters
@@ -86,7 +86,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::StorageClass>**](StorageClass.md)
+[**crate::models::StorageClassList**](StorageClassList.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_kubevirt_storage_classes_no_credentials
 
-> Vec<crate::models::StorageClass> list_kubevirt_storage_classes_no_credentials(project_id, cluster_id)
+> crate::models::StorageClassList list_kubevirt_storage_classes_no_credentials(project_id, cluster_id)
 
 
 List Storage Classes
@@ -117,7 +117,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::StorageClass>**](StorageClass.md)
+[**crate::models::StorageClassList**](StorageClassList.md)
 
 ### Authorization
 

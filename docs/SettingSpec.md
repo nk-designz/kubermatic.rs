@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cleanup_options** | Option<[**crate::models::CleanupOptions**](CleanupOptions.md)> |  | [optional]
-**custom_links** | Option<[**Vec<crate::models::CustomLink>**](CustomLink.md)> |  | [optional]
+**custom_links** | Option<[**crate::models::CustomLinks**](CustomLinks.md)> |  | [optional]
 **default_node_count** | Option<**i32**> |  | [optional]
 **display_api_docs** | Option<**bool**> |  | [optional]
 **display_demo_info** | Option<**bool**> |  | [optional]

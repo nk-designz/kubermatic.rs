@@ -53,7 +53,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aws_sizes
 
-> Vec<crate::models::AwsSize> list_aws_sizes(region, architecture)
+> crate::models::AwsSizeList list_aws_sizes(region, architecture)
 Lists available AWS sizes.
 
 ### Parameters
@@ -66,7 +66,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AwsSize>**](AWSSize.md)
+[**crate::models::AwsSizeList**](AWSSizeList.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aws_sizes_no_credentials
 
-> Vec<crate::models::AwsSize> list_aws_sizes_no_credentials(project_id, dc, cluster_id)
+> crate::models::AwsSizeList list_aws_sizes_no_credentials(project_id, dc, cluster_id)
 
 
 Lists available AWS sizes
@@ -98,7 +98,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AwsSize>**](AWSSize.md)
+[**crate::models::AwsSizeList**](AWSSizeList.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aws_sizes_no_credentials_v2
 
-> Vec<crate::models::AwsSize> list_aws_sizes_no_credentials_v2(project_id, cluster_id, architecture)
+> crate::models::AwsSizeList list_aws_sizes_no_credentials_v2(project_id, cluster_id, architecture)
 
 
 Lists available AWS sizes
@@ -130,7 +130,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AwsSize>**](AWSSize.md)
+[**crate::models::AwsSizeList**](AWSSizeList.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aws_subnets
 
-> Vec<crate::models::AwsSubnet> list_aws_subnets(dc, access_key_id, secret_access_key, credential, assume_role_arn, assume_role_external_id, VPC)
+> crate::models::AwsSubnetList list_aws_subnets(dc, access_key_id, secret_access_key, credential, assume_role_arn, assume_role_external_id, VPC)
 
 
 Lists available AWS subnets
@@ -166,7 +166,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AwsSubnet>**](AWSSubnet.md)
+[**crate::models::AwsSubnetList**](AWSSubnetList.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aws_subnets_no_credentials
 
-> Vec<crate::models::AwsSubnet> list_aws_subnets_no_credentials(project_id, dc, cluster_id)
+> crate::models::AwsSubnetList list_aws_subnets_no_credentials(project_id, dc, cluster_id)
 
 
 Lists available AWS subnets
@@ -198,7 +198,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AwsSubnet>**](AWSSubnet.md)
+[**crate::models::AwsSubnetList**](AWSSubnetList.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aws_subnets_no_credentials_v2
 
-> Vec<crate::models::AwsSubnet> list_aws_subnets_no_credentials_v2(project_id, cluster_id)
+> crate::models::AwsSubnetList list_aws_subnets_no_credentials_v2(project_id, cluster_id)
 
 
 Lists available AWS subnets
@@ -229,7 +229,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AwsSubnet>**](AWSSubnet.md)
+[**crate::models::AwsSubnetList**](AWSSubnetList.md)
 
 ### Authorization
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_awsvpcs
 
-> Vec<crate::models::Awsvpc> list_awsvpcs(dc, access_key_id, secret_access_key, credential, assume_role_arn, assume_role_external_id, VPC)
+> crate::models::AwsvpcList list_awsvpcs(dc, access_key_id, secret_access_key, credential, assume_role_arn, assume_role_external_id, VPC)
 
 
 Lists available AWS vpc's
@@ -265,7 +265,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Awsvpc>**](AWSVPC.md)
+[**crate::models::AwsvpcList**](AWSVPCList.md)
 
 ### Authorization
 

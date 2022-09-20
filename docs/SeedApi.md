@@ -39,7 +39,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_seed_names
 
-> Vec<String> list_seed_names()
+> crate::models::SeedNamesList list_seed_names()
 
 
 ### Parameters
@@ -48,7 +48,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::SeedNamesList**](SeedNamesList.md)
 
 ### Authorization
 

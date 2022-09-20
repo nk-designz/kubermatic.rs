@@ -387,7 +387,7 @@ pub async fn list_azure_security_groups(configuration: &configuration::Configura
 }
 
 /// Lists available VM sizes in an Azure region
-pub async fn list_azure_sizes(configuration: &configuration::Configuration, subscription_id: Option<&str>, tenant_id: Option<&str>, client_id: Option<&str>, client_secret: Option<&str>, location: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::AzureSize>, Error<ListAzureSizesError>> {
+pub async fn list_azure_sizes(configuration: &configuration::Configuration, subscription_id: Option<&str>, tenant_id: Option<&str>, client_id: Option<&str>, client_secret: Option<&str>, location: Option<&str>, credential: Option<&str>) -> Result<crate::models::AzureSizeList, Error<ListAzureSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -441,7 +441,7 @@ pub async fn list_azure_sizes(configuration: &configuration::Configuration, subs
 }
 
 /// Lists available VM sizes in an Azure region
-pub async fn list_azure_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::AzureSize>, Error<ListAzureSizesNoCredentialsError>> {
+pub async fn list_azure_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<crate::models::AzureSizeList, Error<ListAzureSizesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -477,7 +477,7 @@ pub async fn list_azure_sizes_no_credentials(configuration: &configuration::Conf
 }
 
 /// Lists available VM sizes in an Azure region
-pub async fn list_azure_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::AzureSize>, Error<ListAzureSizesNoCredentialsV2Error>> {
+pub async fn list_azure_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::AzureSizeList, Error<ListAzureSizesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

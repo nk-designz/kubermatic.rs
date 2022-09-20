@@ -41,7 +41,7 @@ pub enum ListPacketSizesNoCredentialsV2Error {
 
 
 /// Lists sizes from packet
-pub async fn list_packet_sizes(configuration: &configuration::Configuration, api_key: Option<&str>, project_id: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::Array>, Error<ListPacketSizesError>> {
+pub async fn list_packet_sizes(configuration: &configuration::Configuration, api_key: Option<&str>, project_id: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::PacketSizeList>, Error<ListPacketSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -86,7 +86,7 @@ pub async fn list_packet_sizes(configuration: &configuration::Configuration, api
 }
 
 /// Lists sizes from packet
-pub async fn list_packet_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::Array>, Error<ListPacketSizesNoCredentialsError>> {
+pub async fn list_packet_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::PacketSizeList>, Error<ListPacketSizesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -122,7 +122,7 @@ pub async fn list_packet_sizes_no_credentials(configuration: &configuration::Con
 }
 
 /// Lists sizes from packet
-pub async fn list_packet_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::Array>, Error<ListPacketSizesNoCredentialsV2Error>> {
+pub async fn list_packet_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::PacketSizeList>, Error<ListPacketSizesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

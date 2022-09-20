@@ -30,7 +30,7 @@ pub struct DatacenterSpecOpenstack {
     #[serde(rename = "ignoreVolumeAZ", skip_serializing_if = "Option::is_none")]
     pub ignore_volume_az: Option<bool>,
     #[serde(rename = "images", skip_serializing_if = "Option::is_none")]
-    pub images: Option<::std::collections::HashMap<String, String>>,
+    pub images: Option<crate::models::ImageList>,
     /// Optional: defines if the IPv6 is enabled for the datacenter
     #[serde(rename = "ipv6Enabled", skip_serializing_if = "Option::is_none")]
     pub ipv6_enabled: Option<bool>,

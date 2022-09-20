@@ -405,7 +405,7 @@ pub async fn update_preset(configuration: &configuration::Configuration, provide
     }
 }
 
-pub async fn update_preset_status(configuration: &configuration::Configuration, preset_name: &str, body: crate::models::InlineObject7, provider: Option<&str>) -> Result<(), Error<UpdatePresetStatusError>> {
+pub async fn update_preset_status(configuration: &configuration::Configuration, preset_name: &str, body: crate::models::PresetNameStatusBody, provider: Option<&str>) -> Result<(), Error<UpdatePresetStatusError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -27,7 +27,7 @@ pub enum ListVersionsByProviderError {
 
 
 /// Lists all versions which don't result in automatic updates for a given provider
-pub async fn list_versions_by_provider(configuration: &configuration::Configuration, provider_name: &str, _type: Option<&str>) -> Result<Vec<crate::models::MasterVersion>, Error<ListVersionsByProviderError>> {
+pub async fn list_versions_by_provider(configuration: &configuration::Configuration, provider_name: &str, _type: Option<&str>) -> Result<crate::models::VersionList, Error<ListVersionsByProviderError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

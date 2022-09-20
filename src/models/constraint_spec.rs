@@ -22,7 +22,7 @@ pub struct ConstraintSpec {
     #[serde(rename = "match", skip_serializing_if = "Option::is_none")]
     pub _match: Option<Box<crate::models::ModelMatch>>,
     #[serde(rename = "parameters", skip_serializing_if = "Option::is_none")]
-    pub parameters: Option<::std::collections::HashMap<String, serde_json::Value>>,
+    pub parameters: Option<crate::models::Parameters>,
     #[serde(rename = "selector", skip_serializing_if = "Option::is_none")]
     pub selector: Option<Box<crate::models::ConstraintSelector>>,
 }

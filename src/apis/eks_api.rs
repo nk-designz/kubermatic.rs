@@ -118,7 +118,7 @@ pub enum ValidateEksCredentialsError {
 }
 
 
-pub async fn list_eks_capacity_types(configuration: &configuration::Configuration, ) -> Result<Vec<String>, Error<ListEksCapacityTypesError>> {
+pub async fn list_eks_capacity_types(configuration: &configuration::Configuration, ) -> Result<crate::models::EksCapacityTypeList, Error<ListEksCapacityTypesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -153,7 +153,7 @@ pub async fn list_eks_capacity_types(configuration: &configuration::Configuratio
     }
 }
 
-pub async fn list_eks_instance_types_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::EksInstanceType>, Error<ListEksInstanceTypesNoCredentialsError>> {
+pub async fn list_eks_instance_types_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::EksInstanceTypeList, Error<ListEksInstanceTypesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -188,7 +188,7 @@ pub async fn list_eks_instance_types_no_credentials(configuration: &configuratio
     }
 }
 
-pub async fn list_eks_regions(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::Array>, Error<ListEksRegionsError>> {
+pub async fn list_eks_regions(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::EksRegionList>, Error<ListEksRegionsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -223,7 +223,7 @@ pub async fn list_eks_regions(configuration: &configuration::Configuration, ) ->
     }
 }
 
-pub async fn list_eks_security_groups(configuration: &configuration::Configuration, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>, vpc_id: Option<&str>) -> Result<Vec<crate::models::EksSecurityGroup>, Error<ListEksSecurityGroupsError>> {
+pub async fn list_eks_security_groups(configuration: &configuration::Configuration, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>, vpc_id: Option<&str>) -> Result<crate::models::EksSecurityGroupList, Error<ListEksSecurityGroupsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -273,7 +273,7 @@ pub async fn list_eks_security_groups(configuration: &configuration::Configurati
     }
 }
 
-pub async fn list_eks_subnets(configuration: &configuration::Configuration, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>, vpc_id: Option<&str>) -> Result<Vec<crate::models::EksSubnet>, Error<ListEksSubnetsError>> {
+pub async fn list_eks_subnets(configuration: &configuration::Configuration, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>, vpc_id: Option<&str>) -> Result<crate::models::EksSubnetList, Error<ListEksSubnetsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -323,7 +323,7 @@ pub async fn list_eks_subnets(configuration: &configuration::Configuration, acce
     }
 }
 
-pub async fn list_eks_subnets_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, vpc_id: Option<&str>) -> Result<Vec<crate::models::EksSubnet>, Error<ListEksSubnetsNoCredentialsError>> {
+pub async fn list_eks_subnets_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, vpc_id: Option<&str>) -> Result<crate::models::EksSubnetList, Error<ListEksSubnetsNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -397,7 +397,7 @@ pub async fn list_eks_versions(configuration: &configuration::Configuration, ) -
     }
 }
 
-pub async fn list_eksami_types(configuration: &configuration::Configuration, ) -> Result<Vec<String>, Error<ListEksamiTypesError>> {
+pub async fn list_eksami_types(configuration: &configuration::Configuration, ) -> Result<crate::models::EksamiTypeList, Error<ListEksamiTypesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -433,7 +433,7 @@ pub async fn list_eksami_types(configuration: &configuration::Configuration, ) -
 }
 
 /// Lists EKS vpc's
-pub async fn list_eksvpcs(configuration: &configuration::Configuration, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<Vec<crate::models::Eksvpc>, Error<ListEksvpcsError>> {
+pub async fn list_eksvpcs(configuration: &configuration::Configuration, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<crate::models::EksvpcList, Error<ListEksvpcsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -480,7 +480,7 @@ pub async fn list_eksvpcs(configuration: &configuration::Configuration, access_k
     }
 }
 
-pub async fn list_eksvpcs_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::Eksvpc>, Error<ListEksvpcsNoCredentialsError>> {
+pub async fn list_eksvpcs_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::EksvpcList, Error<ListEksvpcsNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

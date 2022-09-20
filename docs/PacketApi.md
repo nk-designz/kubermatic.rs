@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## list_packet_sizes
 
-> Vec<crate::models::Array> list_packet_sizes(api_key, project_id, credential)
+> Vec<crate::models::PacketSizeList> list_packet_sizes(api_key, project_id, credential)
 
 
 Lists sizes from packet
@@ -28,7 +28,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Array>**](array.md)
+[**Vec<crate::models::PacketSizeList>**](PacketSizeList.md)
 
 ### Authorization
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_packet_sizes_no_credentials
 
-> Vec<crate::models::Array> list_packet_sizes_no_credentials(project_id, dc, cluster_id)
+> Vec<crate::models::PacketSizeList> list_packet_sizes_no_credentials(project_id, dc, cluster_id)
 
 
 Lists sizes from packet
@@ -60,7 +60,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Array>**](array.md)
+[**Vec<crate::models::PacketSizeList>**](PacketSizeList.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_packet_sizes_no_credentials_v2
 
-> Vec<crate::models::Array> list_packet_sizes_no_credentials_v2(project_id, cluster_id)
+> Vec<crate::models::PacketSizeList> list_packet_sizes_no_credentials_v2(project_id, cluster_id)
 
 
 Lists sizes from packet
@@ -91,7 +91,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Array>**](array.md)
+[**Vec<crate::models::PacketSizeList>**](PacketSizeList.md)
 
 ### Authorization
 

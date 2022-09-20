@@ -40,7 +40,7 @@ pub struct DatacenterSpecVSphere {
     #[serde(rename = "storagePolicy", skip_serializing_if = "Option::is_none")]
     pub storage_policy: Option<String>,
     #[serde(rename = "templates", skip_serializing_if = "Option::is_none")]
-    pub templates: Option<::std::collections::HashMap<String, String>>,
+    pub templates: Option<crate::models::ImageList>,
 }
 
 impl DatacenterSpecVSphere {

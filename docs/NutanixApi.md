@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 ## list_nutanix_categories
 
-> Vec<crate::models::NutanixCategory> list_nutanix_categories(dc, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
+> crate::models::NutanixCategoryList list_nutanix_categories(dc, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
 
 
 List category keys from Nutanix
@@ -35,7 +35,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixCategory>**](NutanixCategory.md)
+[**crate::models::NutanixCategoryList**](NutanixCategoryList.md)
 
 ### Authorization
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_categories_no_credentials
 
-> Vec<crate::models::NutanixCategory> list_nutanix_categories_no_credentials(project_id, cluster_id)
+> crate::models::NutanixCategoryList list_nutanix_categories_no_credentials(project_id, cluster_id)
 
 
 Lists available Nutanix categories
@@ -66,7 +66,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixCategory>**](NutanixCategory.md)
+[**crate::models::NutanixCategoryList**](NutanixCategoryList.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_category_values
 
-> Vec<crate::models::NutanixCategoryValue> list_nutanix_category_values(dc, category, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
+> crate::models::NutanixCategoryValueList list_nutanix_category_values(dc, category, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
 
 
 List available category values for a specific category from Nutanix
@@ -101,7 +101,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixCategoryValue>**](NutanixCategoryValue.md)
+[**crate::models::NutanixCategoryValueList**](NutanixCategoryValueList.md)
 
 ### Authorization
 
@@ -117,7 +117,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_category_values_no_credentials
 
-> Vec<crate::models::NutanixCategoryValue> list_nutanix_category_values_no_credentials(project_id, cluster_id, category)
+> crate::models::NutanixCategoryValueList list_nutanix_category_values_no_credentials(project_id, cluster_id, category)
 
 
 Lists available Nutanix category values for a specific category
@@ -133,7 +133,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixCategoryValue>**](NutanixCategoryValue.md)
+[**crate::models::NutanixCategoryValueList**](NutanixCategoryValueList.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_clusters
 
-> Vec<crate::models::NutanixCluster> list_nutanix_clusters(dc, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
+> crate::models::NutanixClusterList list_nutanix_clusters(dc, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
 
 
 List clusters from Nutanix
@@ -167,7 +167,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixCluster>**](NutanixCluster.md)
+[**crate::models::NutanixClusterList**](NutanixClusterList.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_projects
 
-> Vec<crate::models::NutanixProject> list_nutanix_projects(dc, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
+> crate::models::NutanixProjectList list_nutanix_projects(dc, nutanix_username, nutanix_password, nutanix_proxy_url, credential)
 
 
 List projects from Nutanix
@@ -201,7 +201,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixProject>**](NutanixProject.md)
+[**crate::models::NutanixProjectList**](NutanixProjectList.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_subnets
 
-> Vec<crate::models::NutanixSubnet> list_nutanix_subnets(dc, nutanix_cluster, nutanix_username, nutanix_password, nutanix_proxy_url, credential, nutanix_project)
+> crate::models::NutanixSubnetList list_nutanix_subnets(dc, nutanix_cluster, nutanix_username, nutanix_password, nutanix_proxy_url, credential, nutanix_project)
 
 
 List subnets from Nutanix
@@ -237,7 +237,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixSubnet>**](NutanixSubnet.md)
+[**crate::models::NutanixSubnetList**](NutanixSubnetList.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_nutanix_subnets_no_credentials
 
-> Vec<crate::models::NutanixSubnet> list_nutanix_subnets_no_credentials(project_id, cluster_id)
+> crate::models::NutanixSubnetList list_nutanix_subnets_no_credentials(project_id, cluster_id)
 
 
 Lists available Nutanix Subnets
@@ -268,7 +268,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::NutanixSubnet>**](NutanixSubnet.md)
+[**crate::models::NutanixSubnetList**](NutanixSubnetList.md)
 
 ### Authorization
 

@@ -78,7 +78,7 @@ pub enum ValidateAksCredentialsError {
 }
 
 
-pub async fn list_aks_locations(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::AksLocation>, Error<ListAksLocationsError>> {
+pub async fn list_aks_locations(configuration: &configuration::Configuration, ) -> Result<crate::models::AksLocationList, Error<ListAksLocationsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -113,7 +113,7 @@ pub async fn list_aks_locations(configuration: &configuration::Configuration, ) 
     }
 }
 
-pub async fn list_aks_node_pool_modes(configuration: &configuration::Configuration, ) -> Result<Vec<String>, Error<ListAksNodePoolModesError>> {
+pub async fn list_aks_node_pool_modes(configuration: &configuration::Configuration, ) -> Result<crate::models::AksNodePoolModes, Error<ListAksNodePoolModesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -219,7 +219,7 @@ pub async fn list_aks_versions(configuration: &configuration::Configuration, ) -
     }
 }
 
-pub async fn list_aksvm_sizes(configuration: &configuration::Configuration, tenant_id: Option<&str>, subscription_id: Option<&str>, client_id: Option<&str>, client_secret: Option<&str>, credential: Option<&str>, location: Option<&str>) -> Result<Vec<crate::models::AksvmSize>, Error<ListAksvmSizesError>> {
+pub async fn list_aksvm_sizes(configuration: &configuration::Configuration, tenant_id: Option<&str>, subscription_id: Option<&str>, client_id: Option<&str>, client_secret: Option<&str>, credential: Option<&str>, location: Option<&str>) -> Result<crate::models::AksvmSizeList, Error<ListAksvmSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -272,7 +272,7 @@ pub async fn list_aksvm_sizes(configuration: &configuration::Configuration, tena
     }
 }
 
-pub async fn list_aksvm_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, location: Option<&str>) -> Result<Vec<crate::models::AksvmSize>, Error<ListAksvmSizesNoCredentialsError>> {
+pub async fn list_aksvm_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, location: Option<&str>) -> Result<crate::models::AksvmSizeList, Error<ListAksvmSizesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 ## list_eks_capacity_types
 
-> Vec<String> list_eks_capacity_types()
+> crate::models::EksCapacityTypeList list_eks_capacity_types()
 Gets the EKS Capacity types for node group.
 
 ### Parameters
@@ -29,7 +29,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::EksCapacityTypeList**](EKSCapacityTypeList.md)
 
 ### Authorization
 
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ## list_eks_instance_types_no_credentials
 
-> Vec<crate::models::EksInstanceType> list_eks_instance_types_no_credentials(project_id, cluster_id)
+> crate::models::EksInstanceTypeList list_eks_instance_types_no_credentials(project_id, cluster_id)
 Gets the EKS Instance types for node group.
 
 ### Parameters
@@ -58,7 +58,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::EksInstanceType>**](EKSInstanceType.md)
+[**crate::models::EksInstanceTypeList**](EKSInstanceTypeList.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_eks_regions
 
-> Vec<crate::models::Array> list_eks_regions()
+> Vec<crate::models::EksRegionList> list_eks_regions()
 List EKS regions.
 
 ### Parameters
@@ -83,7 +83,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::Array>**](array.md)
+[**Vec<crate::models::EksRegionList>**](EKSRegionList.md)
 
 ### Authorization
 
@@ -99,7 +99,7 @@ This endpoint does not need any parameter.
 
 ## list_eks_security_groups
 
-> Vec<crate::models::EksSecurityGroup> list_eks_security_groups(access_key_id, secret_access_key, credential, region, vpc_id)
+> crate::models::EksSecurityGroupList list_eks_security_groups(access_key_id, secret_access_key, credential, region, vpc_id)
 List EKS securitygroup list.
 
 ### Parameters
@@ -115,7 +115,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::EksSecurityGroup>**](EKSSecurityGroup.md)
+[**crate::models::EksSecurityGroupList**](EKSSecurityGroupList.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_eks_subnets
 
-> Vec<crate::models::EksSubnet> list_eks_subnets(access_key_id, secret_access_key, credential, region, vpc_id)
+> crate::models::EksSubnetList list_eks_subnets(access_key_id, secret_access_key, credential, region, vpc_id)
 Lists EKS subnet list.
 
 ### Parameters
@@ -147,7 +147,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::EksSubnet>**](EKSSubnet.md)
+[**crate::models::EksSubnetList**](EKSSubnetList.md)
 
 ### Authorization
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_eks_subnets_no_credentials
 
-> Vec<crate::models::EksSubnet> list_eks_subnets_no_credentials(project_id, cluster_id, vpc_id)
+> crate::models::EksSubnetList list_eks_subnets_no_credentials(project_id, cluster_id, vpc_id)
 Gets the EKS Subnets for node group.
 
 ### Parameters
@@ -177,7 +177,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::EksSubnet>**](EKSSubnet.md)
+[**crate::models::EksSubnetList**](EKSSubnetList.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ This endpoint does not need any parameter.
 
 ## list_eksami_types
 
-> Vec<String> list_eksami_types()
+> crate::models::EksamiTypeList list_eksami_types()
 Gets the EKS AMI types for node group.
 
 ### Parameters
@@ -229,7 +229,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::EksamiTypeList**](EKSAMITypeList.md)
 
 ### Authorization
 
@@ -245,7 +245,7 @@ This endpoint does not need any parameter.
 
 ## list_eksvpcs
 
-> Vec<crate::models::Eksvpc> list_eksvpcs(access_key_id, secret_access_key, credential, region)
+> crate::models::EksvpcList list_eksvpcs(access_key_id, secret_access_key, credential, region)
 
 
 Lists EKS vpc's
@@ -262,7 +262,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Eksvpc>**](EKSVPC.md)
+[**crate::models::EksvpcList**](EKSVPCList.md)
 
 ### Authorization
 
@@ -278,7 +278,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_eksvpcs_no_credentials
 
-> Vec<crate::models::Eksvpc> list_eksvpcs_no_credentials(project_id, cluster_id)
+> crate::models::EksvpcList list_eksvpcs_no_credentials(project_id, cluster_id)
 Gets the EKS vpc's for node group.
 
 ### Parameters
@@ -291,7 +291,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::Eksvpc>**](EKSVPC.md)
+[**crate::models::EksvpcList**](EKSVPCList.md)
 
 ### Authorization
 

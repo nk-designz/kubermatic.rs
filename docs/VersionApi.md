@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## list_versions_by_provider
 
-> Vec<crate::models::MasterVersion> list_versions_by_provider(provider_name, _type)
+> crate::models::VersionList list_versions_by_provider(provider_name, _type)
 
 
 Lists all versions which don't result in automatic updates for a given provider
@@ -25,7 +25,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::MasterVersion>**](MasterVersion.md)
+[**crate::models::VersionList**](VersionList.md)
 
 ### Authorization
 

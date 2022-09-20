@@ -112,7 +112,7 @@ pub enum UpdateDcError {
 }
 
 
-pub async fn create_dc(configuration: &configuration::Configuration, seed_name: &str, body: Option<crate::models::InlineObject5>) -> Result<crate::models::Datacenter, Error<CreateDcError>> {
+pub async fn create_dc(configuration: &configuration::Configuration, seed_name: &str, body: Option<crate::models::SeedNameDcBody>) -> Result<crate::models::Datacenter, Error<CreateDcError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -288,7 +288,7 @@ pub async fn get_dc_for_seed(configuration: &configuration::Configuration, seed_
     }
 }
 
-pub async fn list_datacenters(configuration: &configuration::Configuration, ) -> Result<Vec<crate::models::Datacenter>, Error<ListDatacentersError>> {
+pub async fn list_datacenters(configuration: &configuration::Configuration, ) -> Result<crate::models::DatacenterList, Error<ListDatacentersError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -429,7 +429,7 @@ pub async fn patch_dc(configuration: &configuration::Configuration, dc: &str, se
     }
 }
 
-pub async fn update_dc(configuration: &configuration::Configuration, seed_name: &str, dc: &str, body: Option<crate::models::InlineObject6>) -> Result<crate::models::Datacenter, Error<UpdateDcError>> {
+pub async fn update_dc(configuration: &configuration::Configuration, seed_name: &str, dc: &str, body: Option<crate::models::DcDcBody>) -> Result<crate::models::Datacenter, Error<UpdateDcError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

@@ -134,7 +134,7 @@ pub async fn list_aws_security_groups(configuration: &configuration::Configurati
     }
 }
 
-pub async fn list_aws_sizes(configuration: &configuration::Configuration, region: Option<&str>, architecture: Option<&str>) -> Result<Vec<crate::models::AwsSize>, Error<ListAwsSizesError>> {
+pub async fn list_aws_sizes(configuration: &configuration::Configuration, region: Option<&str>, architecture: Option<&str>) -> Result<crate::models::AwsSizeList, Error<ListAwsSizesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -176,7 +176,7 @@ pub async fn list_aws_sizes(configuration: &configuration::Configuration, region
 }
 
 /// Lists available AWS sizes
-pub async fn list_aws_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::AwsSize>, Error<ListAwsSizesNoCredentialsError>> {
+pub async fn list_aws_sizes_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<crate::models::AwsSizeList, Error<ListAwsSizesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -212,7 +212,7 @@ pub async fn list_aws_sizes_no_credentials(configuration: &configuration::Config
 }
 
 /// Lists available AWS sizes
-pub async fn list_aws_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, architecture: Option<&str>) -> Result<Vec<crate::models::AwsSize>, Error<ListAwsSizesNoCredentialsV2Error>> {
+pub async fn list_aws_sizes_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, architecture: Option<&str>) -> Result<crate::models::AwsSizeList, Error<ListAwsSizesNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -251,7 +251,7 @@ pub async fn list_aws_sizes_no_credentials_v2(configuration: &configuration::Con
 }
 
 /// Lists available AWS subnets
-pub async fn list_aws_subnets(configuration: &configuration::Configuration, dc: &str, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, assume_role_arn: Option<&str>, assume_role_external_id: Option<&str>, VPC: Option<&str>) -> Result<Vec<crate::models::AwsSubnet>, Error<ListAwsSubnetsError>> {
+pub async fn list_aws_subnets(configuration: &configuration::Configuration, dc: &str, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, assume_role_arn: Option<&str>, assume_role_external_id: Option<&str>, VPC: Option<&str>) -> Result<crate::models::AwsSubnetList, Error<ListAwsSubnetsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -305,7 +305,7 @@ pub async fn list_aws_subnets(configuration: &configuration::Configuration, dc: 
 }
 
 /// Lists available AWS subnets
-pub async fn list_aws_subnets_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<crate::models::AwsSubnet>, Error<ListAwsSubnetsNoCredentialsError>> {
+pub async fn list_aws_subnets_no_credentials(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<crate::models::AwsSubnetList, Error<ListAwsSubnetsNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -341,7 +341,7 @@ pub async fn list_aws_subnets_no_credentials(configuration: &configuration::Conf
 }
 
 /// Lists available AWS subnets
-pub async fn list_aws_subnets_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::AwsSubnet>, Error<ListAwsSubnetsNoCredentialsV2Error>> {
+pub async fn list_aws_subnets_no_credentials_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::AwsSubnetList, Error<ListAwsSubnetsNoCredentialsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -377,7 +377,7 @@ pub async fn list_aws_subnets_no_credentials_v2(configuration: &configuration::C
 }
 
 /// Lists available AWS vpc's
-pub async fn list_awsvpcs(configuration: &configuration::Configuration, dc: &str, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, assume_role_arn: Option<&str>, assume_role_external_id: Option<&str>, VPC: Option<&str>) -> Result<Vec<crate::models::Awsvpc>, Error<ListAwsvpcsError>> {
+pub async fn list_awsvpcs(configuration: &configuration::Configuration, dc: &str, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, assume_role_arn: Option<&str>, assume_role_external_id: Option<&str>, VPC: Option<&str>) -> Result<crate::models::AwsvpcList, Error<ListAwsvpcsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

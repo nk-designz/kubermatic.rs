@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 ## list_gke_cluster_disk_types
 
-> Vec<crate::models::GcpDiskType> list_gke_cluster_disk_types(project_id, cluster_id)
+> crate::models::GcpDiskTypeList list_gke_cluster_disk_types(project_id, cluster_id)
 Gets GKE cluster machine disk types.
 
 ### Parameters
@@ -32,7 +32,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpDiskType>**](GCPDiskType.md)
+[**crate::models::GcpDiskTypeList**](GCPDiskTypeList.md)
 
 ### Authorization
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gke_cluster_images
 
-> Vec<crate::models::GkeImage> list_gke_cluster_images(project_id, cluster_id)
+> crate::models::GkeImageList list_gke_cluster_images(project_id, cluster_id)
 Gets GKE cluster images.
 
 ### Parameters
@@ -61,7 +61,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GkeImage>**](GKEImage.md)
+[**crate::models::GkeImageList**](GKEImageList.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gke_cluster_sizes
 
-> Vec<crate::models::GcpMachineSize> list_gke_cluster_sizes(project_id, cluster_id)
+> crate::models::GcpMachineSizeList list_gke_cluster_sizes(project_id, cluster_id)
 Gets GKE cluster machine sizes.
 
 ### Parameters
@@ -90,7 +90,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpMachineSize>**](GCPMachineSize.md)
+[**crate::models::GcpMachineSizeList**](GCPMachineSizeList.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gke_cluster_zones
 
-> Vec<crate::models::GkeZone> list_gke_cluster_zones(project_id, cluster_id)
+> crate::models::GkeZoneList list_gke_cluster_zones(project_id, cluster_id)
 Gets GKE cluster zones.
 
 ### Parameters
@@ -119,7 +119,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GkeZone>**](GKEZone.md)
+[**crate::models::GkeZoneList**](GKEZoneList.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gke_disk_types
 
-> Vec<crate::models::GkeDiskType> list_gke_disk_types()
+> crate::models::GkeDiskTypeList list_gke_disk_types()
 Gets GKE machine disk types.
 
 ### Parameters
@@ -144,7 +144,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::GkeDiskType>**](GKEDiskType.md)
+[**crate::models::GkeDiskTypeList**](GKEDiskTypeList.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ This endpoint does not need any parameter.
 
 ## list_gke_images
 
-> Vec<crate::models::GkeImage> list_gke_images(service_account, credential, zone)
+> crate::models::GkeImageList list_gke_images(service_account, credential, zone)
 
 
 Lists GKE image types
@@ -176,7 +176,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GkeImage>**](GKEImage.md)
+[**crate::models::GkeImageList**](GKEImageList.md)
 
 ### Authorization
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gke_zones
 
-> Vec<crate::models::GkeZone> list_gke_zones()
+> crate::models::GkeZoneList list_gke_zones()
 
 
 Lists GKE zones
@@ -237,7 +237,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::GkeZone>**](GKEZone.md)
+[**crate::models::GkeZoneList**](GKEZoneList.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ This endpoint does not need any parameter.
 
 ## list_gkevm_sizes
 
-> Vec<crate::models::GcpMachineSize> list_gkevm_sizes(service_account, credential, zone)
+> crate::models::GcpMachineSizeList list_gkevm_sizes(service_account, credential, zone)
 
 
 Lists GKE vmsizes
@@ -269,7 +269,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpMachineSize>**](GCPMachineSize.md)
+[**crate::models::GcpMachineSizeList**](GCPMachineSizeList.md)
 
 ### Authorization
 

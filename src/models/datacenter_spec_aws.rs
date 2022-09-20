@@ -14,7 +14,7 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DatacenterSpecAws {
     #[serde(rename = "images", skip_serializing_if = "Option::is_none")]
-    pub images: Option<::std::collections::HashMap<String, String>>,
+    pub images: Option<crate::models::ImageList>,
     /// The AWS region to use, e.g. \"us-east-1\". For a list of available regions, see https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
     #[serde(rename = "region", skip_serializing_if = "Option::is_none")]
     pub region: Option<String>,

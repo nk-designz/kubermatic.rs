@@ -1745,7 +1745,7 @@ pub async fn create_cluster_role(configuration: &configuration::Configuration, p
     }
 }
 
-pub async fn create_cluster_template(configuration: &configuration::Configuration, project_id: &str, body: Option<crate::models::InlineObject8>) -> Result<crate::models::ClusterTemplate, Error<CreateClusterTemplateError>> {
+pub async fn create_cluster_template(configuration: &configuration::Configuration, project_id: &str, body: Option<crate::models::ProjectIdClustertemplatesBody>) -> Result<crate::models::ClusterTemplate, Error<CreateClusterTemplateError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -1781,7 +1781,7 @@ pub async fn create_cluster_template(configuration: &configuration::Configuratio
     }
 }
 
-pub async fn create_cluster_template_instance(configuration: &configuration::Configuration, project_id: &str, template_id: &str, body: Option<crate::models::InlineObject10>) -> Result<crate::models::ClusterTemplateInstance, Error<CreateClusterTemplateInstanceError>> {
+pub async fn create_cluster_template_instance(configuration: &configuration::Configuration, project_id: &str, template_id: &str, body: Option<crate::models::TemplateIdInstancesBody>) -> Result<crate::models::ClusterTemplateInstance, Error<CreateClusterTemplateInstanceError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2112,7 +2112,7 @@ pub async fn create_node_deployment(configuration: &configuration::Configuration
 }
 
 /// Note that this endpoint can be consumed by every authenticated user.
-pub async fn create_project(configuration: &configuration::Configuration, body: Option<crate::models::InlineObject4>) -> Result<crate::models::Project, Error<CreateProjectError>> {
+pub async fn create_project(configuration: &configuration::Configuration, body: Option<crate::models::V1ProjectsBody>) -> Result<crate::models::Project, Error<CreateProjectError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -2948,7 +2948,7 @@ pub async fn get_alertmanager(configuration: &configuration::Configuration, proj
 }
 
 /// Gets possible backup destination names for a cluster
-pub async fn get_backup_destination_names(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<String>, Error<GetBackupDestinationNamesError>> {
+pub async fn get_backup_destination_names(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::BackupDestinationNames, Error<GetBackupDestinationNamesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4121,7 +4121,7 @@ pub async fn get_role(configuration: &configuration::Configuration, project_id: 
     }
 }
 
-pub async fn import_cluster_template(configuration: &configuration::Configuration, project_id: &str, body: Option<crate::models::InlineObject9>) -> Result<crate::models::ClusterTemplate, Error<ImportClusterTemplateError>> {
+pub async fn import_cluster_template(configuration: &configuration::Configuration, project_id: &str, body: Option<crate::models::ClustertemplatesImportBody>) -> Result<crate::models::ClusterTemplate, Error<ImportClusterTemplateError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4158,7 +4158,7 @@ pub async fn import_cluster_template(configuration: &configuration::Configuratio
 }
 
 /// Lists AKS clusters
-pub async fn list_aks_clusters(configuration: &configuration::Configuration, project_id: &str, tenant_id: Option<&str>, subscription_id: Option<&str>, client_id: Option<&str>, client_secret: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::AksCluster>, Error<ListAksClustersError>> {
+pub async fn list_aks_clusters(configuration: &configuration::Configuration, project_id: &str, tenant_id: Option<&str>, subscription_id: Option<&str>, client_id: Option<&str>, client_secret: Option<&str>, credential: Option<&str>) -> Result<crate::models::AksClusterList, Error<ListAksClustersError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4424,7 +4424,7 @@ pub async fn list_cluster_role_v2(configuration: &configuration::Configuration, 
     }
 }
 
-pub async fn list_cluster_templates(configuration: &configuration::Configuration, project_id: &str) -> Result<Vec<crate::models::ClusterTemplate>, Error<ListClusterTemplatesError>> {
+pub async fn list_cluster_templates(configuration: &configuration::Configuration, project_id: &str) -> Result<crate::models::ClusterTemplateList, Error<ListClusterTemplatesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4459,7 +4459,7 @@ pub async fn list_cluster_templates(configuration: &configuration::Configuration
     }
 }
 
-pub async fn list_clusters(configuration: &configuration::Configuration, project_id: &str, dc: &str) -> Result<Vec<crate::models::Cluster>, Error<ListClustersError>> {
+pub async fn list_clusters(configuration: &configuration::Configuration, project_id: &str, dc: &str) -> Result<crate::models::ClusterList, Error<ListClustersError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4494,7 +4494,7 @@ pub async fn list_clusters(configuration: &configuration::Configuration, project
     }
 }
 
-pub async fn list_clusters_for_project(configuration: &configuration::Configuration, project_id: &str) -> Result<Vec<crate::models::Cluster>, Error<ListClustersForProjectError>> {
+pub async fn list_clusters_for_project(configuration: &configuration::Configuration, project_id: &str) -> Result<crate::models::ClusterList, Error<ListClustersForProjectError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4529,7 +4529,7 @@ pub async fn list_clusters_for_project(configuration: &configuration::Configurat
     }
 }
 
-pub async fn list_clusters_v2(configuration: &configuration::Configuration, project_id: &str, show_dm_count: Option<bool>) -> Result<Vec<crate::models::Cluster>, Error<ListClustersV2Error>> {
+pub async fn list_clusters_v2(configuration: &configuration::Configuration, project_id: &str, show_dm_count: Option<bool>) -> Result<crate::models::ClusterList, Error<ListClustersV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4638,7 +4638,7 @@ pub async fn list_constraints(configuration: &configuration::Configuration, proj
 }
 
 /// Lists EKS clusters
-pub async fn list_eks_clusters(configuration: &configuration::Configuration, project_id: &str, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<Vec<crate::models::EksCluster>, Error<ListEksClustersError>> {
+pub async fn list_eks_clusters(configuration: &configuration::Configuration, project_id: &str, access_key_id: Option<&str>, secret_access_key: Option<&str>, credential: Option<&str>, region: Option<&str>) -> Result<crate::models::EksClusterList, Error<ListEksClustersError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -4971,7 +4971,7 @@ pub async fn list_external_clusters(configuration: &configuration::Configuration
     }
 }
 
-pub async fn list_gke_clusters(configuration: &configuration::Configuration, project_id: &str, service_account: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::GkeCluster>, Error<ListGkeClustersError>> {
+pub async fn list_gke_clusters(configuration: &configuration::Configuration, project_id: &str, service_account: Option<&str>, credential: Option<&str>) -> Result<crate::models::GkeClusterList, Error<ListGkeClustersError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -5999,7 +5999,7 @@ pub async fn patch_gatekeeper_config(configuration: &configuration::Configuratio
     }
 }
 
-pub async fn patch_group_project_binding(configuration: &configuration::Configuration, project_id: &str, binding_name: &str, body: crate::models::InlineObject11) -> Result<crate::models::GroupProjectBinding, Error<PatchGroupProjectBindingError>> {
+pub async fn patch_group_project_binding(configuration: &configuration::Configuration, project_id: &str, binding_name: &str, body: crate::models::GroupbindingsBindingNameBody) -> Result<crate::models::GroupProjectBinding, Error<PatchGroupProjectBindingError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -6545,7 +6545,7 @@ pub async fn update_alertmanager(configuration: &configuration::Configuration, p
     }
 }
 
-pub async fn update_external_cluster(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, body: Option<crate::models::InlineObject12>) -> Result<crate::models::ExternalCluster, Error<UpdateExternalClusterError>> {
+pub async fn update_external_cluster(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, body: Option<crate::models::ClustersClusterIdBody>) -> Result<crate::models::ExternalCluster, Error<UpdateExternalClusterError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

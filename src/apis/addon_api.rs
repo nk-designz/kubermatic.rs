@@ -361,7 +361,7 @@ pub async fn get_addon_v2(configuration: &configuration::Configuration, project_
 }
 
 /// Lists names of addons that can be configured inside the user clusters
-pub async fn list_accessible_addons(configuration: &configuration::Configuration, ) -> Result<Vec<String>, Error<ListAccessibleAddonsError>> {
+pub async fn list_accessible_addons(configuration: &configuration::Configuration, ) -> Result<crate::models::AccessibleAddons, Error<ListAccessibleAddonsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -469,7 +469,7 @@ pub async fn list_addons_v2(configuration: &configuration::Configuration, projec
 }
 
 /// Lists names of addons that can be installed inside the user cluster
-pub async fn list_installable_addons(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<Vec<String>, Error<ListInstallableAddonsError>> {
+pub async fn list_installable_addons(configuration: &configuration::Configuration, project_id: &str, dc: &str, cluster_id: &str) -> Result<crate::models::AccessibleAddons, Error<ListInstallableAddonsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -505,7 +505,7 @@ pub async fn list_installable_addons(configuration: &configuration::Configuratio
 }
 
 /// Lists names of addons that can be installed inside the user cluster
-pub async fn list_installable_addons_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<String>, Error<ListInstallableAddonsV2Error>> {
+pub async fn list_installable_addons_v2(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::AccessibleAddons, Error<ListInstallableAddonsV2Error>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

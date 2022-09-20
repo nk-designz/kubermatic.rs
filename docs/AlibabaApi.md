@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 ## list_alibaba_instance_types
 
-> Vec<crate::models::AlibabaInstanceType> list_alibaba_instance_types(access_key_id, access_key_secret, credential, region)
+> crate::models::AlibabaInstanceTypeList list_alibaba_instance_types(access_key_id, access_key_secret, credential, region)
 Lists available Alibaba instance types.
 
 ### Parameters
@@ -32,7 +32,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaInstanceType>**](AlibabaInstanceType.md)
+[**crate::models::AlibabaInstanceTypeList**](AlibabaInstanceTypeList.md)
 
 ### Authorization
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_alibaba_instance_types_no_credentials
 
-> Vec<crate::models::AlibabaInstanceType> list_alibaba_instance_types_no_credentials(project_id, dc, cluster_id, region)
+> crate::models::AlibabaInstanceTypeList list_alibaba_instance_types_no_credentials(project_id, dc, cluster_id, region)
 
 
 Lists available Alibaba Instance Types
@@ -65,7 +65,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaInstanceType>**](AlibabaInstanceType.md)
+[**crate::models::AlibabaInstanceTypeList**](AlibabaInstanceTypeList.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_alibaba_instance_types_no_credentials_v2
 
-> Vec<crate::models::AlibabaInstanceType> list_alibaba_instance_types_no_credentials_v2(project_id, cluster_id, region)
+> crate::models::AlibabaInstanceTypeList list_alibaba_instance_types_no_credentials_v2(project_id, cluster_id, region)
 
 
 Lists available Alibaba Instance Types
@@ -97,7 +97,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaInstanceType>**](AlibabaInstanceType.md)
+[**crate::models::AlibabaInstanceTypeList**](AlibabaInstanceTypeList.md)
 
 ### Authorization
 
@@ -113,7 +113,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_alibaba_v_switches
 
-> Vec<crate::models::AlibabaVSwitch> list_alibaba_v_switches()
+> crate::models::AlibabaVSwitchList list_alibaba_v_switches()
 Lists available Alibaba vSwitches.
 
 ### Parameters
@@ -122,7 +122,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::AlibabaVSwitch>**](AlibabaVSwitch.md)
+[**crate::models::AlibabaVSwitchList**](AlibabaVSwitchList.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ This endpoint does not need any parameter.
 
 ## list_alibaba_v_switches_no_credentials_v2
 
-> Vec<crate::models::AlibabaVSwitch> list_alibaba_v_switches_no_credentials_v2(project_id, cluster_id, region)
+> crate::models::AlibabaVSwitchList list_alibaba_v_switches_no_credentials_v2(project_id, cluster_id, region)
 
 
 Lists available Alibaba vSwitches
@@ -154,7 +154,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaVSwitch>**](AlibabaVSwitch.md)
+[**crate::models::AlibabaVSwitchList**](AlibabaVSwitchList.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_alibaba_zones
 
-> Vec<crate::models::AlibabaZone> list_alibaba_zones(access_key_id, access_key_secret, credential, region)
+> crate::models::AlibabaZoneList list_alibaba_zones(access_key_id, access_key_secret, credential, region)
 Lists available Alibaba zones.
 
 ### Parameters
@@ -185,7 +185,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaZone>**](AlibabaZone.md)
+[**crate::models::AlibabaZoneList**](AlibabaZoneList.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_alibaba_zones_no_credentials
 
-> Vec<crate::models::AlibabaZone> list_alibaba_zones_no_credentials(project_id, dc, cluster_id, region)
+> crate::models::AlibabaZoneList list_alibaba_zones_no_credentials(project_id, dc, cluster_id, region)
 
 
 Lists available Alibaba Instance Types
@@ -218,7 +218,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaZone>**](AlibabaZone.md)
+[**crate::models::AlibabaZoneList**](AlibabaZoneList.md)
 
 ### Authorization
 
@@ -234,7 +234,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_alibaba_zones_no_credentials_v2
 
-> Vec<crate::models::AlibabaZone> list_alibaba_zones_no_credentials_v2(project_id, cluster_id, region)
+> crate::models::AlibabaZoneList list_alibaba_zones_no_credentials_v2(project_id, cluster_id, region)
 
 
 Lists available Alibaba Instance Types
@@ -250,7 +250,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AlibabaZone>**](AlibabaZone.md)
+[**crate::models::AlibabaZoneList**](AlibabaZoneList.md)
 
 ### Authorization
 

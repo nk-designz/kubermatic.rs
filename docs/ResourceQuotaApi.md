@@ -22,7 +22,7 @@ Creates a new Resource Quota.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | [**InlineObject13**](InlineObject13.md) |  | [required] |
+**body** | [**V2QuotasBody**](V2QuotasBody.md) |  | [required] |
 
 ### Return type
 

@@ -47,7 +47,7 @@ Creates report configuration for KKP metering tool. Only available in Kubermatic
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **name** | **String** |  | [required] |
-**body** | Option<[**InlineObject1**](InlineObject1.md)> |  |  |
+**body** | Option<[**ReportsNameBody1**](ReportsNameBody1.md)> |  |  |
 
 ### Return type
 
@@ -129,7 +129,7 @@ Creates a new Resource Quota.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | [**InlineObject13**](InlineObject13.md) |  | [required] |
+**body** | [**V2QuotasBody**](V2QuotasBody.md) |  | [required] |
 
 ### Return type
 
@@ -157,7 +157,7 @@ Creates a new seed object.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**body** | Option<[**InlineObject2**](InlineObject2.md)> |  |  |
+**body** | Option<[**AdminSeedsBody**](AdminSeedsBody.md)> |  |  |
 
 ### Return type
 
@@ -373,7 +373,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_kubermatic_custom_links
 
-> Vec<crate::models::CustomLink> get_kubermatic_custom_links()
+> crate::models::GlobalCustomLinks get_kubermatic_custom_links()
 Gets the custom links.
 
 ### Parameters
@@ -382,7 +382,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::CustomLink>**](CustomLink.md)
+[**crate::models::GlobalCustomLinks**](GlobalCustomLinks.md)
 
 ### Authorization
 
@@ -740,7 +740,7 @@ Updates existing report configuration for KKP metering tool. Only available in K
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **name** | **String** |  | [required] |
-**body** | Option<[**InlineObject**](InlineObject.md)> |  |  |
+**body** | Option<[**ReportsNameBody**](ReportsNameBody.md)> |  |  |
 
 ### Return type
 
@@ -769,7 +769,7 @@ Updates the seed.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **seed_name** | **String** |  | [required] |
-**body** | Option<[**InlineObject3**](InlineObject3.md)> |  |  |
+**body** | Option<[**SeedsSeedNameBody**](SeedsSeedNameBody.md)> |  |  |
 
 ### Return type
 

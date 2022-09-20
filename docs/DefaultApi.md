@@ -103,7 +103,7 @@ Name | Type | Description  | Required | Notes
 
 ## get_admission_plugins
 
-> Vec<String> get_admission_plugins(version)
+> crate::models::AdmissionPluginList get_admission_plugins(version)
 Returns specified addon config.
 
 ### Parameters
@@ -115,7 +115,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::AdmissionPluginList**](AdmissionPluginList.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ This endpoint does not need any parameter.
 
 ## list_system_labels
 
-> ::std::collections::HashMap<String, crate::models::Array> list_system_labels()
+> crate::models::ResourceLabelMap list_system_labels()
 
 
 List restricted system labels
@@ -167,7 +167,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**::std::collections::HashMap<String, crate::models::Array>**](array.md)
+[**crate::models::ResourceLabelMap**](ResourceLabelMap.md)
 
 ### Authorization
 

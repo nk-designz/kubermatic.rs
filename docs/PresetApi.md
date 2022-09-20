@@ -267,7 +267,7 @@ Updates the status of a preset. It can enable or disable it, so that it won't be
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **preset_name** | **String** |  | [required] |
-**body** | [**InlineObject7**](InlineObject7.md) |  | [required] |
+**body** | [**PresetNameStatusBody**](PresetNameStatusBody.md) |  | [required] |
 **provider** | Option<**String**> |  |  |
 
 ### Return type

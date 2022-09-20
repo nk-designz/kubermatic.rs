@@ -197,7 +197,7 @@ pub async fn get_addon_config(configuration: &configuration::Configuration, addo
     }
 }
 
-pub async fn get_admission_plugins(configuration: &configuration::Configuration, version: &str) -> Result<Vec<String>, Error<GetAdmissionPluginsError>> {
+pub async fn get_admission_plugins(configuration: &configuration::Configuration, version: &str) -> Result<crate::models::AdmissionPluginList, Error<GetAdmissionPluginsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -268,7 +268,7 @@ pub async fn list_addon_configs(configuration: &configuration::Configuration, ) 
 }
 
 /// List restricted system labels
-pub async fn list_system_labels(configuration: &configuration::Configuration, ) -> Result<::std::collections::HashMap<String, crate::models::Array>, Error<ListSystemLabelsError>> {
+pub async fn list_system_labels(configuration: &configuration::Configuration, ) -> Result<crate::models::ResourceLabelMap, Error<ListSystemLabelsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

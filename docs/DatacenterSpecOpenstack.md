@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **enabled_flavors** | Option<**Vec<String>**> | Optional: List of enabled flavors for the given datacenter | [optional]
 **enforce_floating_ip** | Option<**bool**> | Optional | [optional]
 **ignore_volume_az** | Option<**bool**> | Optional | [optional]
-**images** | Option<**::std::collections::HashMap<String, String>**> |  | [optional]
+**images** | Option<[**crate::models::ImageList**](ImageList.md)> |  | [optional]
 **ipv6_enabled** | Option<**bool**> | Optional: defines if the IPv6 is enabled for the datacenter | [optional]
 **manage_security_groups** | Option<**bool**> | Optional: Gets mapped to the \"manage-security-groups\" setting in the cloud config. See https://kubernetes.io/docs/concepts/cluster-administration/cloud-providers/#load-balancer This setting defaults to true. | [optional]
 **node_size_requirements** | Option<[**crate::models::OpenstackNodeSizeRequirements**](OpenstackNodeSizeRequirements.md)> |  | [optional]

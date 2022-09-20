@@ -81,7 +81,7 @@ pub enum ListNutanixSubnetsNoCredentialsError {
 
 
 /// List category keys from Nutanix
-pub async fn list_nutanix_categories(configuration: &configuration::Configuration, dc: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::NutanixCategory>, Error<ListNutanixCategoriesError>> {
+pub async fn list_nutanix_categories(configuration: &configuration::Configuration, dc: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<crate::models::NutanixCategoryList, Error<ListNutanixCategoriesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -129,7 +129,7 @@ pub async fn list_nutanix_categories(configuration: &configuration::Configuratio
 }
 
 /// Lists available Nutanix categories
-pub async fn list_nutanix_categories_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::NutanixCategory>, Error<ListNutanixCategoriesNoCredentialsError>> {
+pub async fn list_nutanix_categories_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::NutanixCategoryList, Error<ListNutanixCategoriesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -165,7 +165,7 @@ pub async fn list_nutanix_categories_no_credentials(configuration: &configuratio
 }
 
 /// List available category values for a specific category from Nutanix
-pub async fn list_nutanix_category_values(configuration: &configuration::Configuration, dc: &str, category: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::NutanixCategoryValue>, Error<ListNutanixCategoryValuesError>> {
+pub async fn list_nutanix_category_values(configuration: &configuration::Configuration, dc: &str, category: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<crate::models::NutanixCategoryValueList, Error<ListNutanixCategoryValuesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -213,7 +213,7 @@ pub async fn list_nutanix_category_values(configuration: &configuration::Configu
 }
 
 /// Lists available Nutanix category values for a specific category
-pub async fn list_nutanix_category_values_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, category: &str) -> Result<Vec<crate::models::NutanixCategoryValue>, Error<ListNutanixCategoryValuesNoCredentialsError>> {
+pub async fn list_nutanix_category_values_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, category: &str) -> Result<crate::models::NutanixCategoryValueList, Error<ListNutanixCategoryValuesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -249,7 +249,7 @@ pub async fn list_nutanix_category_values_no_credentials(configuration: &configu
 }
 
 /// List clusters from Nutanix
-pub async fn list_nutanix_clusters(configuration: &configuration::Configuration, dc: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::NutanixCluster>, Error<ListNutanixClustersError>> {
+pub async fn list_nutanix_clusters(configuration: &configuration::Configuration, dc: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<crate::models::NutanixClusterList, Error<ListNutanixClustersError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -297,7 +297,7 @@ pub async fn list_nutanix_clusters(configuration: &configuration::Configuration,
 }
 
 /// List projects from Nutanix
-pub async fn list_nutanix_projects(configuration: &configuration::Configuration, dc: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::NutanixProject>, Error<ListNutanixProjectsError>> {
+pub async fn list_nutanix_projects(configuration: &configuration::Configuration, dc: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>) -> Result<crate::models::NutanixProjectList, Error<ListNutanixProjectsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -345,7 +345,7 @@ pub async fn list_nutanix_projects(configuration: &configuration::Configuration,
 }
 
 /// List subnets from Nutanix
-pub async fn list_nutanix_subnets(configuration: &configuration::Configuration, dc: &str, nutanix_cluster: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>, nutanix_project: Option<&str>) -> Result<Vec<crate::models::NutanixSubnet>, Error<ListNutanixSubnetsError>> {
+pub async fn list_nutanix_subnets(configuration: &configuration::Configuration, dc: &str, nutanix_cluster: &str, nutanix_username: Option<&str>, nutanix_password: Option<&str>, nutanix_proxy_url: Option<&str>, credential: Option<&str>, nutanix_project: Option<&str>) -> Result<crate::models::NutanixSubnetList, Error<ListNutanixSubnetsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -397,7 +397,7 @@ pub async fn list_nutanix_subnets(configuration: &configuration::Configuration, 
 }
 
 /// Lists available Nutanix Subnets
-pub async fn list_nutanix_subnets_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::NutanixSubnet>, Error<ListNutanixSubnetsNoCredentialsError>> {
+pub async fn list_nutanix_subnets_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::NutanixSubnetList, Error<ListNutanixSubnetsNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

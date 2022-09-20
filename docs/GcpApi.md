@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 ## list_gcp_disk_types
 
-> Vec<crate::models::GcpDiskType> list_gcp_disk_types(service_account, credential, zone)
+> crate::models::GcpDiskTypeList list_gcp_disk_types(service_account, credential, zone)
 
 
 Lists disk types from GCP
@@ -40,7 +40,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpDiskType>**](GCPDiskType.md)
+[**crate::models::GcpDiskTypeList**](GCPDiskTypeList.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_disk_types_no_credentials
 
-> Vec<crate::models::GcpDiskType> list_gcp_disk_types_no_credentials(project_id, dc, cluster_id, zone)
+> crate::models::GcpDiskTypeList list_gcp_disk_types_no_credentials(project_id, dc, cluster_id, zone)
 
 
 Lists disk types from GCP
@@ -73,7 +73,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpDiskType>**](GCPDiskType.md)
+[**crate::models::GcpDiskTypeList**](GCPDiskTypeList.md)
 
 ### Authorization
 
@@ -89,7 +89,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_disk_types_no_credentials_v2
 
-> Vec<crate::models::GcpDiskType> list_gcp_disk_types_no_credentials_v2(project_id, cluster_id, zone)
+> crate::models::GcpDiskTypeList list_gcp_disk_types_no_credentials_v2(project_id, cluster_id, zone)
 
 
 Lists disk types from GCP
@@ -105,7 +105,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpDiskType>**](GCPDiskType.md)
+[**crate::models::GcpDiskTypeList**](GCPDiskTypeList.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_networks
 
-> Vec<crate::models::GcpNetwork> list_gcp_networks()
+> crate::models::GcpNetworkList list_gcp_networks()
 
 
 Lists networks from GCP
@@ -132,7 +132,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::GcpNetwork>**](GCPNetwork.md)
+[**crate::models::GcpNetworkList**](GCPNetworkList.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ This endpoint does not need any parameter.
 
 ## list_gcp_networks_no_credentials
 
-> Vec<crate::models::GcpNetwork> list_gcp_networks_no_credentials(project_id, dc, cluster_id)
+> crate::models::GcpNetworkList list_gcp_networks_no_credentials(project_id, dc, cluster_id)
 
 
 Lists available GCP networks
@@ -164,7 +164,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpNetwork>**](GCPNetwork.md)
+[**crate::models::GcpNetworkList**](GCPNetworkList.md)
 
 ### Authorization
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_networks_no_credentials_v2
 
-> Vec<crate::models::GcpNetwork> list_gcp_networks_no_credentials_v2(project_id, cluster_id)
+> crate::models::GcpNetworkList list_gcp_networks_no_credentials_v2(project_id, cluster_id)
 
 
 Lists available GCP networks
@@ -195,7 +195,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpNetwork>**](GCPNetwork.md)
+[**crate::models::GcpNetworkList**](GCPNetworkList.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_sizes
 
-> Vec<crate::models::GcpMachineSize> list_gcp_sizes(service_account, credential, zone)
+> crate::models::GcpMachineSizeList list_gcp_sizes(service_account, credential, zone)
 
 
 Lists machine sizes from GCP
@@ -227,7 +227,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpMachineSize>**](GCPMachineSize.md)
+[**crate::models::GcpMachineSizeList**](GCPMachineSizeList.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_sizes_no_credentials
 
-> Vec<crate::models::GcpMachineSize> list_gcp_sizes_no_credentials(project_id, dc, cluster_id, zone)
+> crate::models::GcpMachineSizeList list_gcp_sizes_no_credentials(project_id, dc, cluster_id, zone)
 
 
 Lists machine sizes from GCP
@@ -260,7 +260,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpMachineSize>**](GCPMachineSize.md)
+[**crate::models::GcpMachineSizeList**](GCPMachineSizeList.md)
 
 ### Authorization
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_sizes_no_credentials_v2
 
-> Vec<crate::models::GcpMachineSize> list_gcp_sizes_no_credentials_v2(project_id, cluster_id, zone)
+> crate::models::GcpMachineSizeList list_gcp_sizes_no_credentials_v2(project_id, cluster_id, zone)
 
 
 Lists machine sizes from GCP
@@ -292,7 +292,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpMachineSize>**](GCPMachineSize.md)
+[**crate::models::GcpMachineSizeList**](GCPMachineSizeList.md)
 
 ### Authorization
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_subnetworks
 
-> Vec<crate::models::GcpSubnetwork> list_gcp_subnetworks(dc, service_account, credential, network)
+> crate::models::GcpSubnetworkList list_gcp_subnetworks(dc, service_account, credential, network)
 
 
 Lists subnetworks from GCP
@@ -325,7 +325,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpSubnetwork>**](GCPSubnetwork.md)
+[**crate::models::GcpSubnetworkList**](GCPSubnetworkList.md)
 
 ### Authorization
 
@@ -341,7 +341,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_subnetworks_no_credentials
 
-> Vec<crate::models::GcpSubnetwork> list_gcp_subnetworks_no_credentials(project_id, dc, cluster_id, network)
+> crate::models::GcpSubnetworkList list_gcp_subnetworks_no_credentials(project_id, dc, cluster_id, network)
 
 
 Lists available GCP subnetworks
@@ -358,7 +358,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpSubnetwork>**](GCPSubnetwork.md)
+[**crate::models::GcpSubnetworkList**](GCPSubnetworkList.md)
 
 ### Authorization
 
@@ -374,7 +374,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_subnetworks_no_credentials_v2
 
-> Vec<crate::models::GcpSubnetwork> list_gcp_subnetworks_no_credentials_v2(project_id, cluster_id, network)
+> crate::models::GcpSubnetworkList list_gcp_subnetworks_no_credentials_v2(project_id, cluster_id, network)
 
 
 Lists available GCP subnetworks
@@ -390,7 +390,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpSubnetwork>**](GCPSubnetwork.md)
+[**crate::models::GcpSubnetworkList**](GCPSubnetworkList.md)
 
 ### Authorization
 
@@ -406,7 +406,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_zones
 
-> Vec<crate::models::GcpZone> list_gcp_zones(dc, service_account, credential)
+> crate::models::GcpZoneList list_gcp_zones(dc, service_account, credential)
 
 
 Lists available GCP zones
@@ -422,7 +422,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpZone>**](GCPZone.md)
+[**crate::models::GcpZoneList**](GCPZoneList.md)
 
 ### Authorization
 
@@ -438,7 +438,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_zones_no_credentials
 
-> Vec<crate::models::GcpZone> list_gcp_zones_no_credentials(project_id, dc, cluster_id)
+> crate::models::GcpZoneList list_gcp_zones_no_credentials(project_id, dc, cluster_id)
 
 
 Lists available GCP zones
@@ -454,7 +454,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpZone>**](GCPZone.md)
+[**crate::models::GcpZoneList**](GCPZoneList.md)
 
 ### Authorization
 
@@ -470,7 +470,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_gcp_zones_no_credentials_v2
 
-> Vec<crate::models::GcpZone> list_gcp_zones_no_credentials_v2(project_id, cluster_id)
+> crate::models::GcpZoneList list_gcp_zones_no_credentials_v2(project_id, cluster_id)
 
 
 Lists available GCP zones
@@ -485,7 +485,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::GcpZone>**](GCPZone.md)
+[**crate::models::GcpZoneList**](GCPZoneList.md)
 
 ### Authorization
 

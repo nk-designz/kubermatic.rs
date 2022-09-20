@@ -48,7 +48,7 @@ pub enum ListKubevirtStorageClassesNoCredentialsError {
 }
 
 
-pub async fn list_kube_virt_vmi_presets(configuration: &configuration::Configuration, kubeconfig: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::VirtualMachineInstancePreset>, Error<ListKubeVirtVmiPresetsError>> {
+pub async fn list_kube_virt_vmi_presets(configuration: &configuration::Configuration, kubeconfig: Option<&str>, credential: Option<&str>) -> Result<crate::models::VirtualMachineInstancePresetList, Error<ListKubeVirtVmiPresetsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -90,7 +90,7 @@ pub async fn list_kube_virt_vmi_presets(configuration: &configuration::Configura
 }
 
 /// Lists available VirtualMachineInstancePreset
-pub async fn list_kube_virt_vmi_presets_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::VirtualMachineInstancePreset>, Error<ListKubeVirtVmiPresetsNoCredentialsError>> {
+pub async fn list_kube_virt_vmi_presets_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::VirtualMachineInstancePresetList, Error<ListKubeVirtVmiPresetsNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -125,7 +125,7 @@ pub async fn list_kube_virt_vmi_presets_no_credentials(configuration: &configura
     }
 }
 
-pub async fn list_kubevirt_storage_classes(configuration: &configuration::Configuration, kubeconfig: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::StorageClass>, Error<ListKubevirtStorageClassesError>> {
+pub async fn list_kubevirt_storage_classes(configuration: &configuration::Configuration, kubeconfig: Option<&str>, credential: Option<&str>) -> Result<crate::models::StorageClassList, Error<ListKubevirtStorageClassesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -167,7 +167,7 @@ pub async fn list_kubevirt_storage_classes(configuration: &configuration::Config
 }
 
 /// List Storage Classes
-pub async fn list_kubevirt_storage_classes_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::StorageClass>, Error<ListKubevirtStorageClassesNoCredentialsError>> {
+pub async fn list_kubevirt_storage_classes_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::StorageClassList, Error<ListKubevirtStorageClassesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

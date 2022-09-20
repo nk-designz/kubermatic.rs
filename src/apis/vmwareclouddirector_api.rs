@@ -81,7 +81,7 @@ pub enum ListVMwareCloudDirectorTemplatesNoCredentialsError {
 
 
 /// List VMware Cloud Director Catalogs
-pub async fn list_v_mware_cloud_director_catalogs(configuration: &configuration::Configuration, dc: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::VMwareCloudDirectorCatalog>, Error<ListVMwareCloudDirectorCatalogsError>> {
+pub async fn list_v_mware_cloud_director_catalogs(configuration: &configuration::Configuration, dc: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<crate::models::VMwareCloudDirectorCatalogList, Error<ListVMwareCloudDirectorCatalogsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -132,7 +132,7 @@ pub async fn list_v_mware_cloud_director_catalogs(configuration: &configuration:
 }
 
 /// List VMware Cloud Director Catalogs
-pub async fn list_v_mware_cloud_director_catalogs_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::VMwareCloudDirectorCatalog>, Error<ListVMwareCloudDirectorCatalogsNoCredentialsError>> {
+pub async fn list_v_mware_cloud_director_catalogs_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::VMwareCloudDirectorCatalogList, Error<ListVMwareCloudDirectorCatalogsNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -168,7 +168,7 @@ pub async fn list_v_mware_cloud_director_catalogs_no_credentials(configuration: 
 }
 
 /// List VMware Cloud Director OVDC Networks
-pub async fn list_v_mware_cloud_director_networks(configuration: &configuration::Configuration, dc: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::VMwareCloudDirectorNetwork>, Error<ListVMwareCloudDirectorNetworksError>> {
+pub async fn list_v_mware_cloud_director_networks(configuration: &configuration::Configuration, dc: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<crate::models::VMwareCloudDirectorNetworkList, Error<ListVMwareCloudDirectorNetworksError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -219,7 +219,7 @@ pub async fn list_v_mware_cloud_director_networks(configuration: &configuration:
 }
 
 /// List VMware Cloud Director OVDC Networks
-pub async fn list_v_mware_cloud_director_networks_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::VMwareCloudDirectorNetwork>, Error<ListVMwareCloudDirectorNetworksNoCredentialsError>> {
+pub async fn list_v_mware_cloud_director_networks_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::VMwareCloudDirectorNetworkList, Error<ListVMwareCloudDirectorNetworksNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -255,7 +255,7 @@ pub async fn list_v_mware_cloud_director_networks_no_credentials(configuration: 
 }
 
 /// List VMware Cloud Director Storage Profiles
-pub async fn list_v_mware_cloud_director_storage_profiles(configuration: &configuration::Configuration, dc: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::VMwareCloudDirectorStorageProfile>, Error<ListVMwareCloudDirectorStorageProfilesError>> {
+pub async fn list_v_mware_cloud_director_storage_profiles(configuration: &configuration::Configuration, dc: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<crate::models::VMwareCloudDirectorStorageProfileList, Error<ListVMwareCloudDirectorStorageProfilesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -306,7 +306,7 @@ pub async fn list_v_mware_cloud_director_storage_profiles(configuration: &config
 }
 
 /// List VMware Cloud Director Storage Profiles
-pub async fn list_v_mware_cloud_director_storage_profiles_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<Vec<crate::models::VMwareCloudDirectorStorageProfile>, Error<ListVMwareCloudDirectorStorageProfilesNoCredentialsError>> {
+pub async fn list_v_mware_cloud_director_storage_profiles_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str) -> Result<crate::models::VMwareCloudDirectorStorageProfileList, Error<ListVMwareCloudDirectorStorageProfilesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -342,7 +342,7 @@ pub async fn list_v_mware_cloud_director_storage_profiles_no_credentials(configu
 }
 
 /// List VMware Cloud Director Templates
-pub async fn list_v_mware_cloud_director_templates(configuration: &configuration::Configuration, dc: &str, catalog_name: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<Vec<crate::models::VMwareCloudDirectorTemplate>, Error<ListVMwareCloudDirectorTemplatesError>> {
+pub async fn list_v_mware_cloud_director_templates(configuration: &configuration::Configuration, dc: &str, catalog_name: &str, username: Option<&str>, password: Option<&str>, organization: Option<&str>, VDC: Option<&str>, credential: Option<&str>) -> Result<crate::models::VMwareCloudDirectorTemplateList, Error<ListVMwareCloudDirectorTemplatesError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -393,7 +393,7 @@ pub async fn list_v_mware_cloud_director_templates(configuration: &configuration
 }
 
 /// List VMware Cloud Director Templates
-pub async fn list_v_mware_cloud_director_templates_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, catalog_name: &str) -> Result<Vec<crate::models::VMwareCloudDirectorTemplate>, Error<ListVMwareCloudDirectorTemplatesNoCredentialsError>> {
+pub async fn list_v_mware_cloud_director_templates_no_credentials(configuration: &configuration::Configuration, project_id: &str, cluster_id: &str, catalog_name: &str) -> Result<crate::models::VMwareCloudDirectorTemplateList, Error<ListVMwareCloudDirectorTemplatesNoCredentialsError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

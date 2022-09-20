@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 ## list_aks_locations
 
-> Vec<crate::models::AksLocation> list_aks_locations()
+> crate::models::AksLocationList list_aks_locations()
 List AKS recommended Locations.
 
 ### Parameters
@@ -25,7 +25,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**Vec<crate::models::AksLocation>**](AKSLocation.md)
+[**crate::models::AksLocationList**](AKSLocationList.md)
 
 ### Authorization
 
@@ -41,7 +41,7 @@ This endpoint does not need any parameter.
 
 ## list_aks_node_pool_modes
 
-> Vec<String> list_aks_node_pool_modes()
+> crate::models::AksNodePoolModes list_aks_node_pool_modes()
 Gets the AKS node pool modes.
 
 ### Parameters
@@ -50,7 +50,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Vec<String>**
+[**crate::models::AksNodePoolModes**](AKSNodePoolModes.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ This endpoint does not need any parameter.
 
 ## list_aksvm_sizes
 
-> Vec<crate::models::AksvmSize> list_aksvm_sizes(tenant_id, subscription_id, client_id, client_secret, credential, location)
+> crate::models::AksvmSizeList list_aksvm_sizes(tenant_id, subscription_id, client_id, client_secret, credential, location)
 List AKS available VM sizes in an Azure region.
 
 ### Parameters
@@ -139,7 +139,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AksvmSize>**](AKSVMSize.md)
+[**crate::models::AksvmSizeList**](AKSVMSizeList.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_aksvm_sizes_no_credentials
 
-> Vec<crate::models::AksvmSize> list_aksvm_sizes_no_credentials(project_id, cluster_id, location)
+> crate::models::AksvmSizeList list_aksvm_sizes_no_credentials(project_id, cluster_id, location)
 Gets AKS available VM sizes in an Azure region.
 
 ### Parameters
@@ -169,7 +169,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AksvmSize>**](AKSVMSize.md)
+[**crate::models::AksvmSizeList**](AKSVMSizeList.md)
 
 ### Authorization
 

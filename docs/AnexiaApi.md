@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## list_anexia_templates
 
-> Vec<crate::models::AnexiaTemplate> list_anexia_templates(token, credential, location)
+> crate::models::AnexiaTemplateList list_anexia_templates(token, credential, location)
 
 
 Lists templates from anexia
@@ -29,7 +29,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AnexiaTemplate>**](AnexiaTemplate.md)
+[**crate::models::AnexiaTemplateList**](AnexiaTemplateList.md)
 
 ### Authorization
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_anexia_templates_no_credentials_v2
 
-> Vec<crate::models::AnexiaTemplate> list_anexia_templates_no_credentials_v2(project_id, cluster_id)
+> crate::models::AnexiaTemplateList list_anexia_templates_no_credentials_v2(project_id, cluster_id)
 
 
 Lists templates from Anexia
@@ -60,7 +60,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AnexiaTemplate>**](AnexiaTemplate.md)
+[**crate::models::AnexiaTemplateList**](AnexiaTemplateList.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_anexia_vlans
 
-> Vec<crate::models::AnexiaVlan> list_anexia_vlans(token, credential)
+> crate::models::AnexiaVlanList list_anexia_vlans(token, credential)
 
 
 Lists vlans from anexia
@@ -91,7 +91,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AnexiaVlan>**](AnexiaVlan.md)
+[**crate::models::AnexiaVlanList**](AnexiaVlanList.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Required | Notes
 
 ## list_anexia_vlans_no_credentials_v2
 
-> Vec<crate::models::AnexiaVlan> list_anexia_vlans_no_credentials_v2(project_id, cluster_id)
+> crate::models::AnexiaVlanList list_anexia_vlans_no_credentials_v2(project_id, cluster_id)
 
 
 Lists vlans from Anexia
@@ -122,7 +122,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**Vec<crate::models::AnexiaVlan>**](AnexiaVlan.md)
+[**crate::models::AnexiaVlanList**](AnexiaVlanList.md)
 
 ### Authorization
 

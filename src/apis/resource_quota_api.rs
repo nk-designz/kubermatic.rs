@@ -66,7 +66,7 @@ pub enum PutResourceQuotaError {
 }
 
 
-pub async fn create_resource_quota(configuration: &configuration::Configuration, body: crate::models::InlineObject13) -> Result<(), Error<CreateResourceQuotaError>> {
+pub async fn create_resource_quota(configuration: &configuration::Configuration, body: crate::models::V2QuotasBody) -> Result<(), Error<CreateResourceQuotaError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
