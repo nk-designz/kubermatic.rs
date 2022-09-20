@@ -1,6 +1,6 @@
 [package]
 name = "kubermatic-rs"
-version = "2.21.1"
+version = "2.21.2"
 authors = ["OpenAPI Generator team and contributors"]
 edition = "2018"
 
@@ -12,5 +12,6 @@ url = "^2.2"
 [dependencies.reqwest]
 version = "^0.11"
 features = ["json", "multipart", "rustls"]
+default-features = false
 
 [dev-dependencies]
