@@ -1,6 +1,6 @@
 [package]
 name = "kubermatic.rs"
-version = "2.21"
+version = "2.21.0"
 authors = ["OpenAPI Generator team and contributors"]
 edition = "2018"
 
